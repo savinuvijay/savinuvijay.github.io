@@ -157,6 +157,12 @@ body {
         display: flex;
         flex-direction: column;
     }
+    .modal-content .mobile-model-content-600 {
+        height: 600px;
+    }
+    .modal-content .mobile-model-content-300 {
+        height: 300px;
+    }
 }
 
 .thumbnail-container {
