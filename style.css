@@ -226,14 +226,17 @@ body {
     justify-content: center;
 }
 
+.container-column {
+    width: 50vw;
+}
+
 @media (max-width: 700px) {
     .container {
         padding-left: 0;
     }
-}
-
-.container-column {
-    width: 50vw;
+    .container-column {
+        width: 80vw;
+    }
 }
 
 .container-page {
@@ -974,7 +977,7 @@ body {
     color: #fff;
 }
 
-@media (max-width: 700px) {
+@media (min-width: 700px) {
     .contacts-container {
         padding-left: 70px;
     }
