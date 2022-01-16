@@ -1,0 +1,7 @@
+<svg width="70" height="70" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style type="text/css">@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600');</style>
+  </defs>
+  <circle cx="30" cy="35" r="17" stroke="white" stroke-width="2" fill="none" />
+  <text id="value-text" x="21" y="44.5" fill="white" style="font-family: 'Montserrat';font-size: 27;">S</text>
+</svg>
