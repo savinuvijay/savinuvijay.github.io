@@ -472,7 +472,7 @@ body {
     .navbar {
         display: block;
         text-align: center;
-        padding-left: 70px;
+        /* padding-left: 70px; */
     }
 
     .navbar-anim {
