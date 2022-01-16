@@ -152,6 +152,13 @@ body {
     width: 100%;
 }
 
+@media (max-width: 700px) {
+    .row-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .thumbnail-container {
     height: 100%;
     box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
@@ -217,6 +224,12 @@ body {
     padding-left: 60px;
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 700px) {
+    .container {
+        padding-left: 0;
+    }
 }
 
 .container-column {
@@ -390,7 +403,8 @@ body {
         align-items: center;
         font-weight: bold;
         font-size: 1.5rem;
-        color: var(--dark-color);
+        color: var(--light-color);
+        background: var(--primary-color);
         box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
     }
 }
@@ -536,6 +550,44 @@ body {
     opacity: 0.8;
 }
 
+@media (max-width: 700px) {
+    .sidenav {
+        display: none;
+    }
+}
+
+.footer-nav {
+    overflow: hidden;
+    background-color: var(--primary-color);
+    /* position: fixed; */
+    /* top: 0; */
+    width: 100vw;
+    height: 60px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.footer-nav .fa-icon {
+    padding: 10px 20px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    transition: all 500ms;
+}
+
+.footer-nav .fa-icon:hover {
+    opacity: 0.8;
+}
+
+@media (min-width: 700px) {
+    .footer-nav {
+        display: none;
+    }
+}
+
 /* Button Animation */
 
 .btn-anim {
@@ -677,7 +729,7 @@ body {
     position: fixed;
     top: 0;
     background: var(--primary-color);
-    height: 100vh;
+
     animation-name: loadingAnimation;
     animation-duration: 1500ms;
     animation-delay: 1s;
@@ -685,12 +737,30 @@ body {
     /* display: none; */
 }
 
-@keyframes loadingAnimation {
-    0% {
+@media (min-width: 700px) {
+    .loading {
+        height: 100vh;
+    }
+    @keyframes loadingAnimation {
+        0% {
+            width: 100vw;
+        }
+        100% {
+            width: 0px;
+        }
+    }
+}
+@media (max-width: 700px) {
+    .loading {
         width: 100vw;
     }
-    100% {
-        width: 0px;
+    @keyframes loadingAnimation {
+        0% {
+            height: 100vh;
+        }
+        100% {
+            height: 0px;
+        }
     }
 }
 
