@@ -997,7 +997,7 @@ body {
     font-weight: lighter;
 }
 
-@media (max-width: 700px) {
+@media (min-width: 700px) {
     .footer-container {
         padding-left: 70px;
     }
