@@ -156,40 +156,40 @@ function setModalClose(modal) {
     };
 }
 
-let name1 = {
-    firstname: "Savinu",
-    lastname: "vijay",
-};
+// let name1 = {
+//     firstname: "Savinu",
+//     lastname: "vijay",
+// };
 
-let printFullName = function (hometown, state) {
-    console.log(
-        this.firstname +
-            " " +
-            this.lastname +
-            " from " +
-            hometown +
-            ", " +
-            state
-    );
-};
+// let printFullName = function (hometown, state) {
+//     console.log(
+//         this.firstname +
+//             " " +
+//             this.lastname +
+//             " from " +
+//             hometown +
+//             ", " +
+//             state
+//     );
+// };
 
-let printFullNameArrow = () => {
-    console.log(this.firstname + " " + this.lastname);
-};
+// let printFullNameArrow = () => {
+//     console.log(this.firstname + " " + this.lastname);
+// };
 
-printFullName.call(name1, "Kollam", "Kerala");
-printFullName.apply(name1, ["Kollam", "Kerala"]);
-//printFullNameArrow.call(name1);
+// //printFullName.call(name1, "Kollam", "Kerala");
+// //printFullName.apply(name1, ["Kollam", "Kerala"]);
+// //printFullNameArrow.call(name1);
 
-let name2 = {
-    firstname: "Sachin",
-    lastname: "Tendulkar",
-};
+// let name2 = {
+//     firstname: "Sachin",
+//     lastname: "Tendulkar",
+// };
 
-printFullName.call(name2, "Mumbai", "Maharashtra");
-printFullName.apply(name2, ["Mumbai", "Maharashtra"]);
-//printFullNameArrow.call(name2);
+// //printFullName.call(name2, "Mumbai", "Maharashtra");
+// //printFullName.apply(name2, ["Mumbai", "Maharashtra"]);
+// //printFullNameArrow.call(name2);
 
-let printMyName = printFullName.bind(name2, "Mumbai", "Maharashtra");
-console.log(printMyName);
-printMyName();
+// let printMyName = printFullName.bind(name2, "Mumbai", "Maharashtra");
+// //console.log(printMyName);
+// //printMyName();
