@@ -10,7 +10,7 @@
   <title>Savinu Vijay | Front End Developer | Portfolio</title>
 </head>
 <body>
-  <div class="loading"></div>
+
   <div class="parallax-container">
     <div id="cards" class="parallax-column-container">
       <div class="parallax-column-center" >
@@ -86,9 +86,50 @@
     </div>
   </div>
   <script src="parallax.js"></script>
+
+  <header id="menu" class="navbar navbar-anim">
+    <img class="parallax-card signature" src="./assets/svg/signature.svg" alt="card" style="height: 75%;margin: 10px;padding-top: 5px; padding-left: 65px; cursor: pointer;" onclick="scrollToElement('home-page')">
+    <span class="navbar-spacer"></span>
+    <div class="fa-icon fa fa-bars btn-anim btn-anim7" onclick="toggleMenu()"></div>
+    <div class="nav-item btn-anim btn-anim0" onclick="scrollToElement('home-page')">
+      <a>Home</a>
+    </div>
+    <div class="nav-item btn-anim btn-anim1" onclick="scrollToElement('about-page')">
+      <a>About</a>
+    </div>
+    <div class="nav-item btn-anim btn-anim2" onclick="scrollToElement('experience-page')">
+      <a>Experience</a>
+    </div>
+    <div class="nav-item btn-anim btn-anim3" onclick="scrollToElement('works-page')">
+      <a>Works</a>
+    </div>
+    <!-- <div class="nav-item btn-anim btn-anim4" onclick="scrollToElement('achievements-page')">
+      <a>Achievenemts</a>
+    </div> -->
+    <div class="nav-item btn-anim btn-anim5" onclick="scrollToElement('contacts')">
+      <a>Contact</a>
+    </div>
+    <div class="btn-container btn-anim btn-anim6">
+      <a href="https://docs.google.com/document/d/1VAGDrzPD5TovSnKp99wODSo4uAOwCANSvb4vBXd7cSc/edit?usp=sharing" class="btn btn-solid">My Resume</a>
+    </div>
+  </header>
+  <header class="title" onclick="toggleMenu()">
+    <div style="width: 70px; height: 70px;"></div>
+    <img class="parallax-card" src="./assets/svg/signature-white.svg" alt="card" style="height: 75%;">
+    <div class="fa-icon fa fa-bars btn-anim btn-anim7" style="margin: 0 20px;"></div>
+  </header>
+  <nav class="sidenav">
+    <a href="https://www.facebook.com/savinu.vijay" class="fa-icon fa fa-facebook"></a>
+    <a href="https://twitter.com/savinuvijay" class="fa-icon fa fa-twitter"></a>
+    <a href="https://www.instagram.com/savinuvijay" class="fa-icon fa fa-instagram"></a>
+    <a href="https://www.linkedin.com/in/savinu-vijay/" class="fa-icon fa fa-linkedin"></a>
+    <a href="https://github.com/savinuvijay" class="fa-icon fa fa-github"></a>
+    <a href="https://medium.com/@savinu.vijay" class="fa-icon fa fa-medium"></a>
+  </nav>
+
   <div class="container" >
     <div class="container-column">
-      <div id="home-page" class="container-page p-100">
+      <section id="home-page" class="container-page p-100">
         <div id="home">
           <div class="subheading text-dark txt-anim txt-left-anim0">
             Hi, my name is
@@ -120,8 +161,8 @@
             <a class="btn btn-outline" href="https://medium.com/@savinu.vijay/">Blog</a>
           </div> -->
         </div>
-      </div>
-      <div id="about-page" class="container-page"  style="margin-right: 30px;">
+      </section>
+      <section id="about-page" class="container-page"  style="margin-right: 30px;">
         <div id="about" class="about-container">
           <div class="about-text">
               <div class="heading text-dark txt-anim txt-left-anim0">
@@ -176,8 +217,8 @@
               <img src="./assets/dp.jpeg" class="about-image-circle">
           </div>
         </div>
-      </div>
-      <div id="experience-page" class="container-page p-100-auto">
+      </section>
+      <section id="experience-page" class="container-page p-100-auto">
         <div id="experience">
           <div class="heading text-dark txt-anim txt-left-anim0">
           My Experience
@@ -209,14 +250,14 @@
             Total Years of Experience: <span class="subheading-2">3.6</span>
           </p>
         </div>
-      </div>
-      <div id="works-page" class="container-page p-margin">
-        <section id="works">
+      </section>
+      <section id="works-page" class="container-page p-margin">
+        <div id="works">
           <div class="heading text-dark txt-anim txt-left-anim0" >
             Some Things I've Done
           </div>
           <div class="divider txt-anim txt-scale-anim0"></div>
-          <section class="work-item-grid">
+          <div class="work-item-grid">
             <div class="card txt-anim txt-scale-anim3" id="projects-btn">
               <img src="./assets/images/projects-thumbnail.jpg" width="100%"/>
               Projects
@@ -237,7 +278,7 @@
               <img src="./assets/images/designs-thumbnail.jpg" width="100%"/>
               Designs
             </div>
-          </section>
+          </div>
           <!-- <div class="work-item-right">
             <div class="subheading-2 text-dark txt-anim txt-right-anim0">
               Hobby Project
@@ -293,8 +334,8 @@
             </div>
             <div class="divider txt-anim txt-scale-anim0"></div>
           </div> -->
-        </section>
-      </div>
+        </div>
+      </section>
       <!-- <div id="achievements-page" class="container-page p-100">
         <div id="achievements">
           <div class="heading text-dark txt-anim txt-left-anim0">
@@ -623,7 +664,7 @@
     </div>
   </div>
 
-  <div id="contacts" class="contacts-container">
+  <section id="contacts" class="contacts-container">
     <div class="container-column" style="padding-top: 20px;">
       <div class="heading txt-anim txt-scale-anim0">
         Get In Touch
@@ -637,57 +678,21 @@
         <a class="btn btn-outline btn-outline-light m-10" href="https://docs.google.com/document/d/1VAGDrzPD5TovSnKp99wODSo4uAOwCANSvb4vBXd7cSc/edit?usp=sharing">My Resume</a>
       </div>
     </div>
-  </div>
-  <div class="footer-nav">
-    <a href="https://www.facebook.com/savinu.vijay" class="fa-icon fa fa-facebook"></a>
-    <a href="https://twitter.com/savinuvijay" class="fa-icon fa fa-twitter"></a>
-    <a href="https://www.instagram.com/savinuvijay" class="fa-icon fa fa-instagram"></a>
-    <a href="https://www.linkedin.com/in/savinu-vijay/" class="fa-icon fa fa-linkedin"></a>
-    <a href="https://github.com/savinuvijay" class="fa-icon fa fa-github"></a>
-    <a href="https://medium.com/@savinu.vijay" class="fa-icon fa fa-medium"></a>
-  </div>
-  <div class="footer-container">
-    Designed and Developed By <b> Savinu Vijay</b>
-  </div>
-  <div id="menu" class="navbar navbar-anim">
-    <img class="parallax-card signature" src="./assets/svg/signature.svg" alt="card" style="height: 75%;margin: 10px;padding-top: 5px; padding-left: 65px; cursor: pointer;" onclick="scrollToElement('home-page')">
-    <span class="navbar-spacer"></span>
-    <div class="fa-icon fa fa-bars btn-anim btn-anim7" onclick="toggleMenu()"></div>
-    <div class="nav-item btn-anim btn-anim0" onclick="scrollToElement('home-page')">
-      <a>Home</a>
+  </section>
+  <footer>
+    <div class="footer-nav">
+      <a href="https://www.facebook.com/savinu.vijay" class="fa-icon fa fa-facebook"></a>
+      <a href="https://twitter.com/savinuvijay" class="fa-icon fa fa-twitter"></a>
+      <a href="https://www.instagram.com/savinuvijay" class="fa-icon fa fa-instagram"></a>
+      <a href="https://www.linkedin.com/in/savinu-vijay/" class="fa-icon fa fa-linkedin"></a>
+      <a href="https://github.com/savinuvijay" class="fa-icon fa fa-github"></a>
+      <a href="https://medium.com/@savinu.vijay" class="fa-icon fa fa-medium"></a>
     </div>
-    <div class="nav-item btn-anim btn-anim1" onclick="scrollToElement('about-page')">
-      <a>About</a>
+    <div class="footer-container">
+      Designed and Developed By <b> Savinu Vijay</b>
     </div>
-    <div class="nav-item btn-anim btn-anim2" onclick="scrollToElement('experience-page')">
-      <a>Experience</a>
-    </div>
-    <div class="nav-item btn-anim btn-anim3" onclick="scrollToElement('works-page')">
-      <a>Works</a>
-    </div>
-    <!-- <div class="nav-item btn-anim btn-anim4" onclick="scrollToElement('achievements-page')">
-      <a>Achievenemts</a>
-    </div> -->
-    <div class="nav-item btn-anim btn-anim5" onclick="scrollToElement('contacts')">
-      <a>Contact</a>
-    </div>
-    <div class="btn-container btn-anim btn-anim6">
-      <a href="https://docs.google.com/document/d/1VAGDrzPD5TovSnKp99wODSo4uAOwCANSvb4vBXd7cSc/edit?usp=sharing" class="btn btn-solid">My Resume</a>
-    </div>
-  </div>
-  <div class="title" onclick="toggleMenu()">
-    <div style="width: 70px; height: 70px;"></div>
-    <img class="parallax-card" src="./assets/svg/signature-white.svg" alt="card" style="height: 75%;">
-    <div class="fa-icon fa fa-bars btn-anim btn-anim7" style="margin: 0 20px;"></div>
-  </div>
-  <div class="sidenav">
-    <a href="https://www.facebook.com/savinu.vijay" class="fa-icon fa fa-facebook"></a>
-    <a href="https://twitter.com/savinuvijay" class="fa-icon fa fa-twitter"></a>
-    <a href="https://www.instagram.com/savinuvijay" class="fa-icon fa fa-instagram"></a>
-    <a href="https://www.linkedin.com/in/savinu-vijay/" class="fa-icon fa fa-linkedin"></a>
-    <a href="https://github.com/savinuvijay" class="fa-icon fa fa-github"></a>
-    <a href="https://medium.com/@savinu.vijay" class="fa-icon fa fa-medium"></a>
-  </div>
+  </footer>
+  
   <div class="loading"></div>
   <div id="logo" class="logo">
     <svg width="70" height="70" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -698,6 +703,7 @@
       <text id="value-text" x="21" y="44.5" fill="white" style="font-family: 'Montserrat';font-size: 27;">S</text>
     </svg>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
