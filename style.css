@@ -25,6 +25,21 @@ body {
     overflow-x: hidden;
 }
 
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+@media (min-width: 1500px) {
+    body {
+        font-size: 1.3rem;
+    }
+    p {
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -167,8 +182,18 @@ body {
 
 .thumbnail-container {
     height: 100%;
+    position: relative;
     box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
         rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+}
+
+.thumbnail-icon {
+    position: absolute; 
+    top: 15px; 
+    left: 10px;
+    height: 65px; 
+    width: 65px; 
+    border-radius: 50%;
 }
 
 @media (max-width: 700px) {
@@ -199,6 +224,7 @@ body {
     align-items: center;
     background: var(--light-color);
     font-size: 1.6rem;
+    /* font-size: 3vh; */
     color: var(--secondary-color);
     box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
         rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
@@ -335,6 +361,32 @@ body {
     font-size: 1rem;
     font-weight: 900;
     margin-bottom: 5px;
+}
+
+@media (min-width: 1500px) {
+    .subheading {
+        font-size: 1.3rem;
+        font-weight: 900;
+        margin-bottom: 5px;
+    }
+    
+    .subheading-2 {
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    
+    .subheading-3 {
+        font-size: 1.5rem;
+        font-weight: 900;
+        margin-bottom: 5px;
+    }
+    
+    .subheading-4 {
+        font-size: 1.3rem;
+        font-weight: 900;
+        margin-bottom: 5px;
+    }
 }
 
 .divider {
@@ -811,8 +863,17 @@ body {
 
 .about-text p {
     font-size: medium;
-    line-height: 1.2;
+    /* font-size: 3vh; */
+    line-height: 1.6;
     margin: 15px 0;
+}
+
+@media (min-width: 1500px) {
+    .about-text p {
+        font-size: 1.3rem;
+        line-height: 1.6;
+        margin: 15px 0;
+    }
 }
 
 .about-skills-container {
@@ -833,8 +894,8 @@ body {
 }
 
 .about-image-circle {
-    width: 40vh;
-    height: 40vh;
+    width: 35vh;
+    height: 35vh;
     background: rgba(0, 0, 0, 0.3);
     margin: 10% 0 0px 10%;
     border-radius: 50%;
@@ -1018,7 +1079,7 @@ body {
 
 .parallax-column-container {
     position: absolute;
-    top: 0px;
+    top: -50px;
     left: 0px;
     width: 100vw;
 }
@@ -1044,11 +1105,13 @@ body {
 
 .parallax-card {
     display: block;
+    width: 40vw;
 }
 
 .parallax-dots {
     display: block;
     margin: 50px 0;
+    width: 40vw;
 }
 
 @media (max-width: 700px) {
