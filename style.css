@@ -931,10 +931,27 @@ p {
     }
 }
 
+/* --- Skills --- */
+
+.skill-title {
+    color: var(--secondary-color);
+}
+
 /* --- Experience --- */
 
 .experience-detail {
     margin: 20px 30px;
+}
+
+/* --- Certifications --- */
+
+.certification-item {
+    margin: 10px 0;
+    padding: 10px;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
+        rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    border-radius: 5px;
+    background: var(--light-color);
 }
 
 /* --- work --- */

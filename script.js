@@ -64,6 +64,8 @@ const getInteractionObserver = () => {
 var landing = document.getElementById("home");
 var about = document.getElementById("about");
 var experience = document.getElementById("experience");
+var skills = document.getElementById("skills");
+// var certifications = document.getElementById("certifications");
 var works = document.getElementById("works");
 //var achievements = document.getElementById("achievements");
 var contacts = document.getElementById("contacts");
@@ -80,6 +82,8 @@ const observer = getInteractionObserver();
 observer.observe(landing);
 observer.observe(about);
 observer.observe(experience);
+observer.observe(skills);
+// observer.observe(certifications);
 observer.observe(works);
 //observer.observe(achievements);
 observer.observe(contacts);
