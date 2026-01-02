@@ -915,7 +915,7 @@ p {
         box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
     }
 
-    .about-skills-container {
+    .skills-container {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -935,8 +935,15 @@ p {
 }
 
 .skill-title {
-    margin-top: 10px;
+    margin-top: 20px;
     color: var(--secondary-color);
+}
+
+@media (min-width: 700px) {
+    .skill-title {
+        margin-top: 10px;
+        color: var(--secondary-color);
+    }
 }
 
 /* --- Experience --- */
