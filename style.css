@@ -876,13 +876,6 @@ p {
     }
 }
 
-.about-skills-container {
-    display: flex;
-    justify-content: space-between;
-    font-weight: bold;
-    color: var(--dark-color);
-}
-
 .about-image-container {
     width: 300px;
     height: 300px;
@@ -933,11 +926,24 @@ p {
 
 /* --- Skills --- */
 
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: var(--dark-color);
+    margin-right: 20px;
+}
+
 .skill-title {
+    margin-top: 10px;
     color: var(--secondary-color);
 }
 
 /* --- Experience --- */
+
+.experience-heading {
+ margin-top: 10px;
+}
 
 .experience-detail {
     margin: 20px 30px;
