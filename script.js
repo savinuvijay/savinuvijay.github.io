@@ -1,3 +1,10 @@
+const resumeUrl =
+    "https://docs.google.com/document/d/1HjO_Kf5kGT8e02MHlM-4Mfs5eGBxAqUm/edit?usp=sharing&ouid=107760502614245244444&rtpof=true&sd=true";
+
+document.querySelectorAll(".resume-link").forEach((link) => {
+    link.href = resumeUrl;
+});
+
 const btnAnim = document.querySelectorAll(".btn-anim");
 
 window.setTimeout(() => {
