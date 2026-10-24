@@ -215,6 +215,7 @@ p {
 
 .thumbnail {
     height: 100%;
+    width: 250px;
 }
 
 .card {
