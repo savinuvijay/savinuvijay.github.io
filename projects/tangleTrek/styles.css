@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+:root {
+    --font-game: 'Press Start 2P', sans-serif;
+    --font-body: 'Nunito Sans', sans-serif;
+    --color-text-light: #fff;
+    --color-text-dark: #000;
+    --color-game-background: #0874a9;
+    --color-button-blue: #A8D7FA;
+    --color-button-hover: #7FB3D5;
+    --color-button-blue-dark: #2a83bb;
+    --color-button-blue-light: #d5ecfe;
+    --color-light-blue: #A8D7FA;
+    --color-dark-blue: #0e5480;
+    --color-dark-blue-transparent: rgba(11, 61, 93, 0.8);
+    --color-grass-green: #82c66D;
+    --color-trophy-yellow: #FFD52A;
+    --color-trophy-yellow-hover: #FFE066;
+    --color-trophy-yellow-light: #FFF2A8;
+    --color-trophy-yellow-dark: #D9B600;
+    --color-icon-green: #09B168;
+    --color-icon-green-hover: #0cca78;
+    --color-icon-green-light: #3DDD9C;
+    --color-icon-green-dark: #045B41;
+    --color-icon-purple: #5372AD;
+    --color-icon-purple-hover: #709cec;
+    --color-icon-purple-light: #86A7D7;
+    --color-icon-purple-dark: #183F76;
+    --color-icon-pink: #FD6995;
+    --color-icon-pink-hover: #faadc4;
+    --color-icon-pink-light: #F5CCD8;
+    --color-icon-pink-dark: #C32D55;
+    
+    --polygon-2-step-full: 4px;
+    --polygon-2-step-half: 2px;
+    --polygon-2-step: polygon(
+        var(--polygon-2-step-full) 0,
+        calc(100% - var(--polygon-2-step-full)) 0,
+        calc(100% - var(--polygon-2-step-full)) var(--polygon-2-step-half),
+        calc(100% - var(--polygon-2-step-half)) var(--polygon-2-step-half),
+        calc(100% - var(--polygon-2-step-half)) var(--polygon-2-step-full),
+        100% var(--polygon-2-step-full),
+        100% calc(100% - var(--polygon-2-step-full)),
+        calc(100% - var(--polygon-2-step-half)) calc(100% - var(--polygon-2-step-full)),
+        calc(100% - var(--polygon-2-step-half)) calc(100% - var(--polygon-2-step-half)),
+        calc(100% - var(--polygon-2-step-full)) calc(100% - var(--polygon-2-step-half)),
+        calc(100% - var(--polygon-2-step-full)) 100%,
+        var(--polygon-2-step-full) 100%,
+        var(--polygon-2-step-full) calc(100% - var(--polygon-2-step-half)),
+        var(--polygon-2-step-half) calc(100% - var(--polygon-2-step-half)),
+        var(--polygon-2-step-half) calc(100% - var(--polygon-2-step-full)),
+        0 calc(100% - var(--polygon-2-step-full)),
+        0 var(--polygon-2-step-full),
+        var(--polygon-2-step-half) var(--polygon-2-step-full),
+        var(--polygon-2-step-half) var(--polygon-2-step-half),
+        var(--polygon-2-step-full) var(--polygon-2-step-half)
+    );
+    --polygon-3-step-full: 6px;
+    --polygon-3-step-third: 2px;
+    --polygon-3-step-two-thirds: 4px;
+    --polygon-3-step: polygon(
+        var(--polygon-3-step-full) 0,
+        calc(100% - var(--polygon-3-step-full)) 0,
+        calc(100% - var(--polygon-3-step-full)) var(--polygon-3-step-third),
+        calc(100% - var(--polygon-3-step-two-thirds)) var(--polygon-3-step-third),
+        calc(100% - var(--polygon-3-step-two-thirds)) var(--polygon-3-step-two-thirds),
+        calc(100% - var(--polygon-3-step-third)) var(--polygon-3-step-two-thirds),
+        calc(100% - var(--polygon-3-step-third)) var(--polygon-3-step-full),
+        100% var(--polygon-3-step-full),
+        100% calc(100% - var(--polygon-3-step-full)),
+        calc(100% - var(--polygon-3-step-third)) calc(100% - var(--polygon-3-step-full)),
+        calc(100% - var(--polygon-3-step-third)) calc(100% - var(--polygon-3-step-two-thirds)),
+        calc(100% - var(--polygon-3-step-two-thirds)) calc(100% - var(--polygon-3-step-two-thirds)),
+        calc(100% - var(--polygon-3-step-two-thirds)) calc(100% - var(--polygon-3-step-third)),
+        calc(100% - var(--polygon-3-step-full)) calc(100% - var(--polygon-3-step-third)),
+        calc(100% - var(--polygon-3-step-full)) 100%,
+        var(--polygon-3-step-full) 100%,
+        var(--polygon-3-step-full) calc(100% - var(--polygon-3-step-third)),
+        var(--polygon-3-step-two-thirds) calc(100% - var(--polygon-3-step-third)),
+        var(--polygon-3-step-two-thirds) calc(100% - var(--polygon-3-step-two-thirds)),
+        var(--polygon-3-step-third) calc(100% - var(--polygon-3-step-two-thirds)),
+        var(--polygon-3-step-third) calc(100% - var(--polygon-3-step-full)),
+        0 calc(100% - var(--polygon-3-step-full)),
+        0 var(--polygon-3-step-full),
+        var(--polygon-3-step-third) var(--polygon-3-step-full),
+        var(--polygon-3-step-third) var(--polygon-3-step-two-thirds),
+        var(--polygon-3-step-two-thirds) var(--polygon-3-step-two-thirds),
+        var(--polygon-3-step-two-thirds) var(--polygon-3-step-third),
+        var(--polygon-3-step-full) var(--polygon-3-step-third)
+    );
+    --polygon-5-step-full: 10px;
+    --polygon-5-step-one: 2px;
+    --polygon-5-step-two: 4px;
+    --polygon-5-step-three: 6px;
+    --polygon-5-step-four: 8px;
+    --polygon-5-step: polygon(
+        var(--polygon-5-step-full) 0,
+        calc(100% - var(--polygon-5-step-full)) 0,
+        calc(100% - var(--polygon-5-step-full)) var(--polygon-5-step-one),
+        calc(100% - var(--polygon-5-step-four)) var(--polygon-5-step-one),
+        calc(100% - var(--polygon-5-step-four)) var(--polygon-5-step-two),
+        calc(100% - var(--polygon-5-step-three)) var(--polygon-5-step-two),
+        calc(100% - var(--polygon-5-step-three)) var(--polygon-5-step-three),
+        calc(100% - var(--polygon-5-step-two)) var(--polygon-5-step-three),
+        calc(100% - var(--polygon-5-step-two)) var(--polygon-5-step-four),
+        calc(100% - var(--polygon-5-step-one)) var(--polygon-5-step-four),
+        calc(100% - var(--polygon-5-step-one)) var(--polygon-5-step-full),
+        100% var(--polygon-5-step-full),
+        100% calc(100% - var(--polygon-5-step-full)),
+        calc(100% - var(--polygon-5-step-one)) calc(100% - var(--polygon-5-step-full)),
+        calc(100% - var(--polygon-5-step-one)) calc(100% - var(--polygon-5-step-four)),
+        calc(100% - var(--polygon-5-step-two)) calc(100% - var(--polygon-5-step-four)),
+        calc(100% - var(--polygon-5-step-two)) calc(100% - var(--polygon-5-step-three)),
+        calc(100% - var(--polygon-5-step-three)) calc(100% - var(--polygon-5-step-three)),
+        calc(100% - var(--polygon-5-step-three)) calc(100% - var(--polygon-5-step-two)),
+        calc(100% - var(--polygon-5-step-four)) calc(100% - var(--polygon-5-step-two)),
+        calc(100% - var(--polygon-5-step-four)) calc(100% - var(--polygon-5-step-one)),
+        calc(100% - var(--polygon-5-step-full)) calc(100% - var(--polygon-5-step-one)),
+        calc(100% - var(--polygon-5-step-full)) 100%,
+        var(--polygon-5-step-full) 100%,
+        var(--polygon-5-step-full) calc(100% - var(--polygon-5-step-one)),
+        var(--polygon-5-step-four) calc(100% - var(--polygon-5-step-one)),
+        var(--polygon-5-step-four) calc(100% - var(--polygon-5-step-two)),
+        var(--polygon-5-step-three) calc(100% - var(--polygon-5-step-two)),
+        var(--polygon-5-step-three) calc(100% - var(--polygon-5-step-three)),
+        var(--polygon-5-step-two) calc(100% - var(--polygon-5-step-three)),
+        var(--polygon-5-step-two) calc(100% - var(--polygon-5-step-four)),
+        var(--polygon-5-step-one) calc(100% - var(--polygon-5-step-four)),
+        var(--polygon-5-step-one) calc(100% - var(--polygon-5-step-full)),
+        0 calc(100% - var(--polygon-5-step-full)),
+        0 var(--polygon-5-step-full),
+        var(--polygon-5-step-one) var(--polygon-5-step-full),
+        var(--polygon-5-step-one) var(--polygon-5-step-four),
+        var(--polygon-5-step-two) var(--polygon-5-step-four),
+        var(--polygon-5-step-two) var(--polygon-5-step-three),
+        var(--polygon-5-step-three) var(--polygon-5-step-three),
+        var(--polygon-5-step-three) var(--polygon-5-step-two),
+        var(--polygon-5-step-four) var(--polygon-5-step-two),
+        var(--polygon-5-step-four) var(--polygon-5-step-one),
+        var(--polygon-5-step-full) var(--polygon-5-step-one)
+    );
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    color: var(--color-text-light);
+    background: var(--color-game-background);
+    overflow-x: hidden;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body .section-label,
+body .section-subtitle,
+body .game-button {
+    font-family: var(--font-game);
+}
+
+header {
+    background: var(--color-dark-blue);
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 0;
+}
+
+.navbar {
+    overflow: hidden;
+    background: var(--color-dark-blue-transparent);
+    padding-right: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 70px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+.hero-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: url('../../assets/projects/tangleTrek/tangleTrekHeroBackground3.png') no-repeat center center / cover;
+}
+
+.hero-content {
+    text-align: left;
+    color: var(--color-text-light);
+    width: 45vw;
+}
+
+.hero-image {
+    flex: 0 1 40vw;
+    height: min(75vh, 500px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    -webkit-text-stroke: 0.5px var(--color-text-dark);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-description {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.hero-buttons, .hero-elements {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.section-container {
+    padding: 0.8rem;
+    color: var(--color-text-dark);
+    border-radius: 15px;
+}
+
+.section-content-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.credits-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--color-text-light);
+    text-align: left;
+}
+
+.credits-table th,
+.credits-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.credits-table thead th {
+    color: var(--color-trophy-yellow);
+    font-family: var(--font-game);
+    font-size: 0.75rem;
+}
+
+.credits-table tbody th {
+    font-weight: 700;
+}
+
+.credits-table a {
+    color: var(--color-trophy-yellow);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.credits-table a:hover,
+.credits-table a:focus-visible {
+    color: var(--color-trophy-yellow-light);
+}
+
+.credits-table tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.pixel-border {
+    padding: 2.5px;
+    clip-path: var(--polygon-2-step);
+    background: var(--color-text-dark);
+}
+
+.pixel-box {
+    padding: 1.5rem;
+    clip-path: var(--polygon-2-step);
+}
+
+.pixel-box-no-border {
+    padding: 0;
+}
+
+.pixel-corners-3-step {
+    clip-path: var(--polygon-3-step);
+}
+
+.pixel-corners-5-step {
+    clip-path: var(--polygon-5-step);
+}
+
+.pixel-box-label {
+    padding: 0.8rem;
+    color: var(--color-text-dark);
+    font-family: var(--font-game);
+}
+
+.pixel-box-dark-blue {
+    background: var(--color-dark-blue);
+    color: var(--color-text-light);
+    border: none;
+    box-shadow:
+        inset 0 2px 0 var(--color-button-blue-light),
+        inset 0 -2px 0 var(--color-button-blue-dark),
+        0 4px 0 var(--color-text-dark);
+}
+
+.pixel-border-fit {
+    width: fit-content;
+    font-size: 0.8rem;
+}
+
+.pixel-box-blue {
+    background: var(--color-light-blue);
+    box-shadow:
+        inset 0 2px 0 var(--color-button-blue-light),
+        inset 0 -2px 0 var(--color-button-blue-dark),
+        0 4px 0 var(--color-text-dark);
+}
+
+.pixel-box-blue-button:hover {
+    background: var(--color-button-hover);
+    cursor: pointer;
+}
+
+.pixel-box-yellow {
+    background: var(--color-trophy-yellow);
+    box-shadow:
+        inset 0 2px 0 var(--color-trophy-yellow-light),
+        inset 0 -2px 0 var(--color-trophy-yellow-dark),
+        0 4px 0 var(--color-text-dark);
+}
+
+.pixel-box-yellow-button:hover {
+    background: var(--color-trophy-yellow-hover);
+    cursor: pointer;
+}
+
+.pixel-box-green {
+    background: var(--color-icon-green);
+    box-shadow:
+        inset 0 2px 0 var(--color-icon-green-light),
+        inset 0 -2px 0 var(--color-icon-green-dark),
+        0 4px 0 var(--color-text-dark);
+}
+
+.pixel-box-green-button:hover {
+    background: var(--color-icon-green-hover);
+    cursor: pointer;
+}
+
+.pixel-box-purple {
+    background: var(--color-icon-purple);
+    box-shadow:
+        inset 0 2px 0 var(--color-icon-purple-light),
+        inset 0 -2px 0 var(--color-icon-purple-dark),
+        0 4px 0 var(--color-text-dark);
+}
+
+.pixel-box-purple-button:hover {
+    background: var(--color-icon-purple-hover);
+    cursor: pointer;
+}
+
+.pixel-box-pink {
+    background: var(--color-icon-pink);
+    box-shadow:
+        inset 0 2px 0 var(--color-icon-pink-light),
+        inset 0 -2px 0 var(--color-icon-pink-dark),
+        0 4px 0 var(--color-text-dark);
+}
+
+.pixel-box-pink-button:hover {
+    background: var(--color-icon-pink-hover);
+    cursor: pointer;
+}
+
+.icon-box {
+    width: 70px;
+    height: 50px;
+    border-radius: 1rem;
+    border: 2px solid var(--color-text-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.icon-checkmark {
+    transform: scale(1.5);
+    margin-right: 1rem;
+    color: var(--color-grass-green);
+    -webkit-text-stroke: 0.5px var(--color-text-dark);
+}
+
+.divider {
+    height: 2px;
+    background: var(--color-light-blue);
+    border-radius: 50%;
+}
+
+.fade-divider {
+  margin: 0;
+  height: 2px;
+  border: none;
+  background: linear-gradient(90deg, transparent, var(--color-light-blue) 50%, transparent);
+  /* For dark mode, use rgba(255, 255, 255, 0.2) instead */
+}
+
+.vertical-divider {
+  width: 2px;               /* Defines the line thickness */
+  height: 100%;            /* Defines the line length */
+  background: linear-gradient(180deg, transparent, var(--color-dark-blue), transparent); /* Fades at top and bottom */
+  margin: 0 20px;           /* Adds spacing on the left and right sides */
+}
+
+/* Player Container */
+.audio-player {
+  display: flex;
+  align-items: center;
+  background-color: var(--player-bg);
+  border-radius: 12px;
+  padding: 12px 20px;
+  width: 500px;
+  height: 60px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  gap: 16px;
+}
+/* Play/Pause Button */
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.play-btn {
+  background: var(--accent-color);
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.play-btn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+.play-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--bg-color);
+}
+
+/* The Modal (background) */
+.modal {
+    visibility: hidden;
+    position: fixed;
+    z-index: 101;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-anim {
+    opacity: 0;
+}
+
+.modal-anim-transition {
+    opacity: 1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .modal-anim {
+        transition: opacity 500ms ease;
+    }
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    color: var(--color-text-dark);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
+        rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100vh;
+    height: 100vh;
+    width: 35vw;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content .modal-content-container {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.gameplay-intro {
+    margin: 0 0 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.gameplay-steps {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.completion-intro {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.completion-outcome-heading {
+    margin-bottom: 0.5rem;
+}
+
+.completion-outcomes {
+    display: grid;
+    gap: 0.5rem;
+    margin: 0 0 1rem;
+    padding: 0;
+    list-style: none;
+}
+
+.completion-outcomes li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem 0.75rem;
+    background: var(--color-light-blue);
+    box-shadow: inset 0 -2px 0 var(--color-button-blue-dark);
+}
+
+.completion-outcomes .icon-checkmark {
+    flex: 0 0 auto;
+    margin: 0;
+}
+
+.completion-closing {
+    color: var(--color-dark-blue);
+    font-size: 1.1rem;
+}
+
+.modal-content .modal-content-row {
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 20px 0;
+    background-color: var(--light-color);
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
+        rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 150px;
+    border-radius: 5px;
+    transition: transform 500ms;
+}
+
+.modal-content .model-item {
+    height: 180px;
+}

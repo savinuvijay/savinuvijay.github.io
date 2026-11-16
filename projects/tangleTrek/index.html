@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="title" content="Savinu Vijay | Senior Frontend Engineer & UX Designer | Portfolio">
+  <meta name="description" content="Senior frontend engineer and UX designer building accessible, intuitive web applications. Experienced in Angular, TypeScript, design systems, and turning complex workflows into clear user experiences.">
+  <meta name="author" content="Savinu Vijay">
+  <meta property="og:image" content="../../assets/dp.jpeg">
+  <meta property="og:image:type" content="image/jpg">
+  <meta property="og:image:width" content="500">
+  <meta property="og:image:height" content="500">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <link rel="icon" href="../../assets/projects/tangleTrek/app_icon.ico" sizes="16x16 32x32" type="image/png">
+  <title>Savinu Vijay | Senior Frontend Engineer & UX Designer | Portfolio</title>
+</head>
+<body>
+    <header class="navbar">
+        <img src="../../assets/projects/tangleTrek/logo.png" alt="Logo" class="logo" style="margin: 0.3rem 1rem;">
+        <h1 class="header-title">Tangle Trek</h1>
+        <div style="flex: 1 1 auto"></div>
+        <div>
+            <div class="pixel-border pixel-corners-3-step pixel-border-fit" style="margin-top: 1rem; margin-right: 1rem;">
+                <a href="https://tangletrek.savinuvijay.com" class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-yellow pixel-box-yellow-button" style="display: block; color: var(--color-text-dark); text-decoration: none;">
+                    <div style="display: flex; align-items: center; gap: 1rem; justify-content: center;">
+                        <span class="fa-icon fa fa-play"></span><span>PLAY GAME</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="hero-container" style="position: relative;">
+        <img src="../../assets/projects/tangleTrek/kunju_sprite_13.png" alt="Gameplay Image" style="position:absolute; bottom:1rem; left:25rem; height: 8vw;">
+        <div class="hero-content">
+            <div class="pixel-border pixel-corners-3-step pixel-border-fit pixel-box-no-border">
+                <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-yellow">
+                    CASE STUDY
+                </div>
+            </div>
+            <h1 class="hero-title">Tangle Trek</h1>
+            <h2 class="hero-subtitle">THINK. PROGRAM. EXPLORE.</h2>
+            <p class="hero-description">An interactive puzzle adventure that introduces programming logic through visual instructions and problem-solving.</p>
+            <div class="hero-elements">
+                <div class="pixel-border pixel-corners-3-step pixel-border-fit pixel-box-no-border">
+                    <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-blue">
+                        <div style="display: flex; align-items: center; gap: 1rem; justify-content: center;">
+                            <span class="fa-icon fa fa-gamepad"></span><span>Independent Project</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pixel-border pixel-corners-3-step pixel-border-fit pixel-box-no-border">
+                    <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-blue">
+                        <div style="display: flex; align-items: center; gap: 1rem; justify-content: center;">
+                            <span class="fa-icon fa fa-forward"></span><span>10 Levels</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pixel-border pixel-corners-3-step pixel-border-fit pixel-box-no-border">
+                    <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-blue">
+                        <div style="display: flex; align-items: center; gap: 1rem; justify-content: center;">
+                            <span class="fa-icon fa fa-code"></span><span>Svelte + PixiJS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <div class="pixel-border pixel-corners-3-step pixel-border-fit">
+                    <a href="https://tangletrek.savinuvijay.com" class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-yellow pixel-box-yellow-button" style="display: block; color: var(--color-text-dark); text-decoration: none;">
+                        <div style="display: flex; align-items: center; gap: 1rem; justify-content: center;">
+                            <span class="fa-icon fa fa-play"></span><span>PLAY THE GAME</span><span class="fa-icon fa fa-arrow-right"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="pixel-border pixel-corners-3-step pixel-border-fit">
+                    <a href="#idea-section" class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-blue pixel-box-blue-button" style="display: block; color: var(--color-text-dark); text-decoration: none;">
+                        <div style="display: flex; align-items: center; gap: 1rem; justify-content: center;">
+                            <span>EXPLORE THE JOURNEY</span><span class="fa-icon fa fa-arrow-down"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="../../assets/projects/tangleTrek/game-cap-video-1.gif" alt="Gameplay Image" style="height: 100%; border-radius: 1rem; border: 5px solid var(--color-grass-green);">
+        </div>
+    </div>
+    <hr class="fade-divider">
+    <div style="width: 100vw; display: flex; justify-content: center;">
+        <div style="width: 90rem;">
+            <!-- 01 / THE IDEA -->
+            <div class="section-container" id="idea-section">
+                <div class="pixel-border pixel-corners-5-step">
+                    <div class="pixel-box pixel-corners-5-step pixel-box-blue">
+                        <div class="section-content">
+                            <div class="section-content-row">
+                                <div class="content-block" style="display: flex; flex-grow: 1; align-items: center; justify-content: center;">
+                                    <div style="height: 100%; width: 250px; border-radius: 10px;">
+                                        <img src="../../assets/projects/tangleTrek/trophy.png" alt="Gameplay Image" style="width: 100%; border-radius: 2rem;">
+                                    </div>
+                                </div>
+                                <div class="content-block" style="max-width: 30vw;">
+                                    <div class="pixel-border pixel-corners-3-step pixel-border-fit" id="idea-btn" style="cursor: pointer;">
+                                        <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-yellow">
+                                            01 / THE IDEA
+                                        </div>
+                                    </div>
+                                    <h2>Making programming tangible through play.</h2>
+                                    <p>
+                                        A puzzle game that turns programming logic into a playful, visual experience. Players explore a world of challenges, using visual instructions to navigate and solve problems, making the abstract concepts of coding accessible and engaging.
+                                    </p>
+                                </div>
+                                <div style="flex: 1 1 auto; padding: 1rem 0; display: flex; align-items: center; justify-content: center;">
+                                    <div class="vertical-divider"></div>
+                                </div>
+                                <div class="content-block">
+                                    <div style="display: flex; align-items: center; gap: 2rem;">
+                                        <span class="fa-icon fa fa-users" style="font-size: 2rem; color: var(--color-icon-green); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
+                                        <div>
+                                            <h3>Audience</h3>
+                                            <p>Beginners and puzzle enthusiasts.</p>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 2rem;">
+                                        <span class="fa-icon fa fa-bullseye" style="font-size: 2rem; color: var(--color-icon-pink); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
+                                        <div>
+                                            <h3>Goal</h3>
+                                            <p>Make programming logic approachable and fun.</p>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 2rem;">
+                                        <span class="fa-icon fa fa-flag" style="font-size: 2rem; color: var(--color-trophy-yellow); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
+                                        <div>
+                                            <h3>Approach</h3>
+                                            <p>Use visual instructions and problem-solving challenges.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="fade-divider">
+            <!-- 02 / THE GAMEPLAY -->
+            <div class="section-container" style="position: relative;">
+                <div class="pixel-border pixel-corners-5-step pixel-box-no-border">
+                    <div class="pixel-box pixel-corners-5-step pixel-box-dark-blue">
+                        <div class="section-content">
+                            <div class="pixel-border pixel-corners-3-step pixel-border-fit" id="gameplay-btn" style="cursor: pointer;">
+                                <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-yellow">
+                                    02 / THE GAMEPLAY
+                                </div>
+                            </div>
+                            <h2>Explore. Program. Execute.</h2>
+                            <div class="section-content-row" style="justify-content: space-around; color: var(--color-text-dark); padding: 0 2rem;">
+                                <div class="content-block">
+                                    <div class="pixel-border pixel-corners-5-step">
+                                        <div class="pixel-box pixel-corners-5-step pixel-box-blue">
+                                            <div class="icon-box pixel-box-pink">
+                                                <div class="fa-icon fa fa-th" style="font-size: 2rem;"></div>
+                                            </div>
+                                            <h4>01 EXPLORE</h4>
+                                            <p>Understand the broad, obstacles and the goal.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--color-text-dark);">
+                                    <span class="fa-icon fa fa-arrow-right" style="transform: scale(1.5); color: var(--color-trophy-yellow); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
+                                </div>
+                                <div class="content-block">
+                                    <div class="pixel-border pixel-corners-5-step">
+                                        <div class="pixel-box pixel-corners-5-step pixel-box-blue">
+                                            <div class="icon-box pixel-box-purple">
+                                                <div class="fa-icon fa fa-list" style="font-size: 2rem;"></div>
+                                            </div>
+                                            <h4>02 PROGRAM</h4>
+                                            <p>Select and arrange instructions using visual blocks.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--color-text-dark);">
+                                    <span class="fa-icon fa fa-arrow-right" style="transform: scale(1.5); color: var(--color-trophy-yellow); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
+                                </div>
+                                <div class="content-block">
+                                    <div class="pixel-border pixel-corners-5-step">
+                                        <div class="pixel-box pixel-corners-5-step pixel-box-blue">
+                                            <div class="icon-box pixel-box-green">
+                                                <div class="fa-icon fa fa-play" style="font-size: 2rem;"></div>
+                                            </div>
+                                            <h4>03 EXECUTE</h4>
+                                            <p>Run the sequence and watch the character bring it to life.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="../../assets/projects/tangleTrek/tree-large.png" alt="Gameplay Image" style="position:absolute; bottom:1rem; left:-1.5rem; width: 100px;">
+                <img src="../../assets/projects/tangleTrek/bush-1.png" alt="Gameplay Image" style="position:absolute; bottom:0.8rem; left:-0.5rem; width: 70px;">
+                <img src="../../assets/projects/tangleTrek/tree-small.png" alt="Gameplay Image" style="position:absolute; bottom:1rem; right:-1.5rem; width: 100px;">
+                <img src="../../assets/projects/tangleTrek/bush-3.png" alt="Gameplay Image" style="position:absolute; bottom:0.8rem; right:-0.5rem; width: 70px;">
+            </div>
+            <hr class="fade-divider">
+            <!-- 03 / FROM CHARACTER TO GAME -->
+            <div class="section-container">
+                <div class="pixel-border pixel-corners-5-step">
+                    <div class="pixel-box pixel-corners-5-step pixel-box-blue">
+                        <div class="section-content">
+                            <div class="pixel-border pixel-corners-3-step pixel-border-fit" id="journey-btn" style="cursor: pointer;">
+                                <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-yellow">
+                                    03 / FROM CHARACTER TO GAME
+                                </div>
+                            </div>
+                            <h2>An experiment-driven journey.</h2>
+                            <p>
+                                TangleTrek evolved step by step - from a single character to a complete playable game.
+                            </p>
+                            <div class="section-content-row" style="gap: 1rem;">
+                                <div class="content-block">
+                                    <div style="height: 100px; width: 170px; border-radius: 1rem; display: flex; align-items: center;">
+                                        <img src="../../assets/projects/tangleTrek/kunju_sprite_00.png" alt="Gameplay Image" style="height: 80%;">
+                                    </div>
+                                    <h6>01 The Character</h6>
+                                    <p>Started with a simple character and visual style.</p>
+                                </div>
+                                <div style="display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                                    <span class="fa-icon fa fa-arrow-right" style="color: var(--color-trophy-yellow); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
+                                </div>
+                                <div class="content-block">
+                                    <div style="height: 100px; width: 10vw; border-radius: 1rem; display: flex; align-items: center;">
+                                        <img src="../../assets/projects/tangleTrek/kunju_sprite_13.png" alt="Gameplay Image" style="height: 80%;">
+                                        <img src="../../assets/projects/tangleTrek/kunju_sprite_14.png" alt="Gameplay Image" style="height: 80%;">
+                                        <img src="../../assets/projects/tangleTrek/kunju_sprite_15.png" alt="Gameplay Image" style="height: 80%;">
+                                    </div>
+                                    <h6>02 Movement & Animation</h6>
+                                    <p>Exparimented with movement and animations.</p>
+                                </div>
+                                <div style="display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                                    <span class="fa-icon fa fa-arrow-right" style="color: var(--color-trophy-yellow); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
+                                </div>
+                                <div class="content-block">
+                                    <div style="height: 100px; width: 170px; border-radius: 1rem; display: flex; align-items: center;">
+                                        <img src="../../assets/projects/tangleTrek/actions.png" alt="Gameplay Image" style="width: 100%;">
+                                    </div>
+                                    <h6>03 The Actions</h6>
+                                    <p>Defined core instructions like move and turn.</p>
+                                </div>
+                                <div style="display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                                    <span class="fa-icon fa fa-arrow-right" style="color: var(--color-trophy-yellow); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
+                                </div>
+                                <div class="content-block">
+                                    <div style="height: 100px; width: 170px; border-radius: 1rem; display: flex; align-items: center;">
+                                        <img src="../../assets/projects/tangleTrek/action-library.png" alt="Gameplay Image" style="height: 100%;">
+                                    </div>
+                                    <h6>04 Action Library</h6>
+                                    <p>Organized actions into reusable library.</p>
+                                </div>
+                                <div style="display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                                    <span class="fa-icon fa fa-arrow-right" style="color: var(--color-trophy-yellow); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
+                                </div>
+                                <div class="content-block">
+                                    <div style="height: 100px; width: 170px; border-radius: 1rem; display: flex; align-items: center;">
+                                        <img src="../../assets/projects/tangleTrek/sequence-builder.png" alt="Gameplay Image" style="width: 100%;">
+                                    </div>
+                                    <h6>05 Sequence Builder</h6>
+                                    <p>Built a drag and drop sequence builder to build the action sequence.</p>
+                                </div>
+                                <div style="display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                                    <span class="fa-icon fa fa-arrow-right" style="color: var(--color-trophy-yellow); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
+                                </div>
+                                <div class="content-block">
+                                    <div style="height: 100px; width: 170px; border-radius: 1rem; display: flex; align-items: center;">
+                                        <img src="../../assets/projects/tangleTrek/game-cap-1.png" alt="Gameplay Image" style="height: 100%; border-radius: 1rem;">
+                                    </div>
+                                    <h6>06 The Complete Game</h6>
+                                    <p>Refined the styling, added levels and polished the experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="fade-divider">
+            <!-- 04 / INTERACTION DESIGN -->
+            <div class="section-container" style="position: relative;">
+                <div class="pixel-border pixel-corners-5-step pixel-box-no-border">
+                    <div class="pixel-box pixel-corners-5-step pixel-box-dark-blue">
+                        <div class="section-content">
+                            <div class="section-content-row">
+                                <div class="content-block">
+                                    <div class="pixel-border pixel-corners-3-step pixel-border-fit" id="interaction-btn" style="cursor: pointer;">
+                                        <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-yellow">
+                                            04 / INTERACTION DESIGN
+                                        </div>
+                                    </div>
+                                    <h2>Building with visual instructions.</h2>
+                                    <p>
+                                        A simple, tactile interface that lets players build sequences of actions using visual blocks, making programming logic tangible and intuitive.
+                                    </p>
+                                    <div style="margin-left: 2rem;">
+                                        <div class="section-content-row" style="justify-content: left; gap: 1rem; margin-bottom: 1rem;">
+                                            <div class="icon-box pixel-box-green">
+                                                <div class="fa-icon fa fa-play" style="font-size: 2rem;"></div>
+                                            </div>
+                                            <div>
+                                                <h5 style="margin: 10px 0;">Action Library</h5>
+                                                <p>A set of visual actions to control the character.</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-content-row" style="justify-content: left; gap: 1rem; margin-bottom: 1rem;">
+                                            <div class="icon-box pixel-box-purple">
+                                                <div class="fa-icon fa fa-list" style="font-size: 2rem;"></div>
+                                            </div>
+                                            <div>
+                                                <h5 style="margin: 10px 0;">Sequence Builder</h5>
+                                                <p>Arrange actions using a drag-and-drop.</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-content-row" style="justify-content: left; gap: 1rem; margin-bottom: 1rem;">
+                                            <div class="icon-box pixel-box-pink">
+                                                <div class="fa-icon fa fa-refresh" style="font-size: 2rem;"></div>
+                                            </div>
+                                            <div>
+                                                <h5 style="margin: 10px 0;">Repeat Block</h5>
+                                                <p>Group and repeat actions.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-block">
+                                    <div style="width: 450px; height: 450px; background: var(--color-light-blue); border-radius: 1rem;">
+                                        <img src="../../assets/projects/tangleTrek/game-cap-video-2.gif" alt="Gameplay Image" style="width: 100%; border-radius: 1rem; border: 3px solid var(--color-text-dark);">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="../../assets/projects/tangleTrek/tree-large.png" alt="Gameplay Image" style="position:absolute; bottom:1rem; left:-1.5rem; width: 100px;">
+                <img src="../../assets/projects/tangleTrek/bush-1.png" alt="Gameplay Image" style="position:absolute; bottom:0.8rem; left:-0.5rem; width: 70px;">
+                <img src="../../assets/projects/tangleTrek/tree-small.png" alt="Gameplay Image" style="position:absolute; bottom:1rem; right:-1.5rem; width: 100px;">
+                <img src="../../assets/projects/tangleTrek/bush-3.png" alt="Gameplay Image" style="position:absolute; bottom:0.8rem; right:-0.5rem; width: 70px;">
+            </div>
+            <hr class="fade-divider">
+            <!-- 05 / ENGINEERING -->
+            <div class="section-container">
+                <div class="pixel-border pixel-corners-5-step">
+                    <div class="pixel-box pixel-corners-5-step pixel-box-blue">
+                        <div class="section-content">
+                            <div class="pixel-border pixel-corners-3-step pixel-border-fit" id="engineering-btn" style="cursor: pointer;">
+                                <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-yellow">
+                                    05 / ENGINEERING
+                                </div>
+                            </div>
+                            <h2>Turning interactions into a playable experience.</h2>
+                            <p>A web game built with Svelte and PixiJS, combining a reactive UI with a fast, 2D game rendering engine.</p>
+                            <div class="section-content-row" style="justify-content: space-around;">
+                                <div class="pixel-border pixel-corners-5-step">
+                                    <div class="pixel-box pixel-corners-5-step pixel-box-blue" style="text-align: center; width: 18vw; padding: 0.5rem;">
+                                        <div style="width: 80px; height: 80px; margin: 1rem auto; border-radius: 1rem;">
+                                            <img src="../../assets/projects/tangleTrek/svelte-logo.png" alt="Gameplay Image" style="height: 100%;">
+                                        </div>
+                                        <h4 style="margin: 0;">Svelte</h4>
+                                        <p style="margin: 0;">(UI & Interaction)</p>
+                                    </div>
+                                </div>
+                                <div style="display: flex; align-items: center; justify-content: center; font-size: 2rem;">
+                                    <span class="fa-icon fa fa-arrow-right" style="color: var(--color-trophy-yellow); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
+                                </div>
+                                <div class="pixel-border pixel-corners-5-step">
+                                    <div class="pixel-box pixel-corners-5-step pixel-box-blue" style="text-align: center; width: 18vw; padding: 0.5rem;">
+                                        <div style="width: 80px; height: 80px; margin: 1rem auto; border-radius: 1rem;">
+                                            <img src="../../assets/projects/tangleTrek/game-controller.png" alt="Gameplay Image" style="height: 100%;">
+                                        </div>
+                                        <h4 style="margin: 0;">Game Logic</h4>
+                                        <p style="margin: 0;">(Gameplay & Mechanics)</p>
+                                    </div>
+                                </div>
+                                <div style="display: flex; align-items: center; justify-content: center; font-size: 2rem;">
+                                    <span class="fa-icon fa fa-arrow-right" style="color: var(--color-trophy-yellow); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
+                                </div>
+                                <div class="pixel-border pixel-corners-5-step">
+                                    <div class="pixel-box pixel-corners-5-step pixel-box-blue" style="text-align: center; width: 18vw; padding: 0.5rem;">
+                                        <div style="width: 80px; height: 80px; margin: 1rem auto; border-radius: 1rem;">
+                                            <img src="../../assets/projects/tangleTrek/pixijs.png" alt="Gameplay Image" style="width: 100%;">
+                                        </div>
+                                        <h4 style="margin: 0;">PixiJS</h4>
+                                        <p style="margin: 0;">(Rendering & Animation)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-content-row" style="justify-content: space-around; margin-top: 1rem;">
+                                <div class="content-block">
+                                    <p><span class="fa-icon fa fa-check icon-checkmark"></span>Component-based UI</p>
+                                    <p><span class="fa-icon fa fa-check icon-checkmark"></span>Game board & tile rendering</p>
+                                    <p><span class="fa-icon fa fa-check icon-checkmark"></span>Character movement and animation</p>
+                                </div>
+                                <div class="content-block">
+                                    <p><span class="fa-icon fa fa-check icon-checkmark"></span>Drag and drop interactions</p>
+                                    <p><span class="fa-icon fa fa-check icon-checkmark"></span>Sequence execution engine.</p>
+                                    <p><span class="fa-icon fa fa-check icon-checkmark"></span>Level progression (10 levels)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="fade-divider">
+            <!-- 06 / MOBILE EXPERIENCE -->
+            <div class="section-container" style="position: relative;">
+                <div class="pixel-border pixel-corners-5-step pixel-box-no-border">
+                    <div class="pixel-box pixel-corners-5-step pixel-box-dark-blue">
+                        <div class="section-content">
+                            <div class="section-content-row" style="justify-content: left;">
+                                <div class="content-block">
+                                    <div style="width: 360px; height: 650px; background: var(--color-dark-blue); border-radius: 1rem;">
+                                        <img src="../../assets/projects/tangleTrek/game-cap-video-3.gif" alt="Gameplay Image" style="height: 100%; border-radius: 1rem; border: 3px solid var(--color-text-dark);">
+                                    </div>
+                                </div>
+                                <div class="content-block">
+                                    <div class="pixel-border pixel-corners-3-step pixel-border-fit" id="mobile-btn" style="cursor: pointer;">
+                                        <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-yellow">
+                                            06 / MOBILE EXPERIENCE
+                                        </div>
+                                    </div>
+                                    <h2>Taking the game mobile.</h2>
+                                    <p><span class="fa-icon fa fa-check icon-checkmark"></span>Touch-friendly interactions.</p>
+                                    <p><span class="fa-icon fa fa-check icon-checkmark"></span>Responsive layout.</p>
+                                    <p><span class="fa-icon fa fa-check icon-checkmark"></span>Drag-and-drop on touch.</p>
+                                    <p><span class="fa-icon fa fa-check icon-checkmark"></span>Same gameplay experience across devices.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <img src="../../assets/projects/tangleTrek/tree-large.png" alt="Gameplay Image" style="position:absolute; bottom:1rem; left:-1.5rem; width: 100px;">
+                <img src="../../assets/projects/tangleTrek/bush-1.png" alt="Gameplay Image" style="position:absolute; bottom:0.8rem; left:-0.5rem; width: 70px;">
+                <img src="../../assets/projects/tangleTrek/tree-small.png" alt="Gameplay Image" style="position:absolute; bottom:1rem; right:-1.5rem; width: 100px;">
+                <img src="../../assets/projects/tangleTrek/bush-3.png" alt="Gameplay Image" style="position:absolute; bottom:0.8rem; right:-0.5rem; width: 70px;">
+            </div>
+            <hr class="fade-divider">
+            <!-- 07 / SOUND & ATMOSPHERE -->
+            <div class="section-container">
+                <div class="pixel-border pixel-corners-5-step">
+                    <div class="pixel-box pixel-corners-5-step pixel-box-blue">
+                        <div class="section-content">
+                            <div class="pixel-border pixel-corners-3-step pixel-border-fit" id="sound-btn" style="cursor: pointer;">
+                                <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-yellow">
+                                    07 / SOUND & ATMOSPHERE
+                                </div>
+                            </div>
+                            <h2>A little music for the adventure.</h2>
+                            <p>An original, looping background soundtrack composed specifically for the game that adds atmosphere to the puzzle-solving experience.</p>
+                            <!-- Audio Element -->
+                            <audio id="audio-track" src="../../assets/projects/tangleTrek/theme.wav" loop prefetch="auto"></audio>
+                            <div style="display: flex; justify-content: center;">
+                                <div class="pixel-border pixel-corners-5-step">
+                                    <div class="pixel-box pixel-corners-5-step pixel-box-dark-blue" style="text-align: center; padding: 0.5rem;">
+                                        <div style="width: 370px; height: 100px; color:#000; border-radius: 1rem; display: flex; justify-content: space-between; align-items: center; padding: 0 1rem;">
+                                            <button class="icon-box pixel-box-green pixel-box-green-button" style="height: 70px; width: 70px; font-size: 1.5rem; border-radius: 50%; border: 2px solid #000;" id="play-btn" aria-label="Play">
+                                                <span class="fa-icon fa fa-play"></span>
+                                            </button>
+                                            <div style="flex: 1 1 auto;"></div>
+                                            <img class="audio-waveform" src="../../assets/projects/tangleTrek/waveform1-static.png" data-static-src="../../assets/projects/tangleTrek/waveform1-static.png" data-animated-src="../../assets/projects/tangleTrek/waveform1.gif" alt="" aria-hidden="true" style="height: 100%; margin-right: -10px;">
+                                            <img class="audio-waveform" src="../../assets/projects/tangleTrek/waveform1-static.png" data-static-src="../../assets/projects/tangleTrek/waveform1-static.png" data-animated-src="../../assets/projects/tangleTrek/waveform1.gif" alt="" aria-hidden="true" style="height: 100%; margin-right: -10px;">
+                                            <img class="audio-waveform" src="../../assets/projects/tangleTrek/waveform1-static.png" data-static-src="../../assets/projects/tangleTrek/waveform1-static.png" data-animated-src="../../assets/projects/tangleTrek/waveform1.gif" alt="" aria-hidden="true" style="height: 100%;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="fade-divider">
+            <!-- 08 / ACKNOWLEDEMENTS & CREDITS -->
+            <div class="section-container" style="position: relative;">
+                <div class="pixel-border pixel-corners-5-step pixel-box-no-border">
+                    <div class="pixel-box pixel-corners-5-step pixel-box-dark-blue">
+                        <div class="section-content">
+                            <div class="section-content-row" style="justify-content: left;">
+                                <div class="content-block">
+                                    <div class="pixel-border pixel-corners-3-step pixel-border-fit" id="ack-btn" style="cursor: pointer;">
+                                        <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-yellow">
+                                            08 / ACKNOWLEDEMENTS & CREDITS
+                                        </div>
+                                    </div>
+                                    <h2>Assets & Tools</h2>
+                                    <table class="credits-table" style="margin-left: 2rem;">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Category</th>
+                                                <th scope="col">Credit</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Graphics</th>
+                                                <td><a href="https://kenney.nl/assets/tiny-town">Kenney - Tiny Town Asset Pack</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Pixel art editing</th>
+                                                <td><a href="https://www.piskelapp.com/">Piskel Editor</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Sound and music</th>
+                                                <td><a href="https://www.beepbox.co/">BeepBox</a>, <a href="https://freesound.org/">Freesound.org</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Game engine and UI</th>
+                                                <td><a href="https://pixijs.com/">PixiJS</a>, <a href="https://svelte.dev/">Svelte</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="../../assets/projects/tangleTrek/tree-large.png" alt="Gameplay Image" style="position:absolute; bottom:1rem; left:-1.5rem; width: 100px;">
+                <img src="../../assets/projects/tangleTrek/bush-1.png" alt="Gameplay Image" style="position:absolute; bottom:0.8rem; left:-0.5rem; width: 70px;">
+                <img src="../../assets/projects/tangleTrek/tree-small.png" alt="Gameplay Image" style="position:absolute; bottom:1rem; right:-1.5rem; width: 100px;">
+                <img src="../../assets/projects/tangleTrek/bush-3.png" alt="Gameplay Image" style="position:absolute; bottom:0.8rem; right:-0.5rem; width: 70px;">
+            </div>
+            <hr class="fade-divider">
+            <!-- 09 / LEVEL COMPLETE! -->
+            <div class="section-container">
+                <div class="pixel-border pixel-corners-5-step">
+                    <div class="pixel-box pixel-corners-5-step pixel-box-blue">
+                        <div class="section-content">
+                            <div class="section-content-row">
+                                <div class="content-block">
+                                    <div class="pixel-border pixel-corners-3-step pixel-border-fit" id="complete-btn" style="cursor: pointer;">
+                                        <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-yellow">
+                                            09 / LEVEL COMPLETE!
+                                        </div>
+                                    </div>
+                                    <h2>From experiment to complete game.</h2>
+                                    <p><span class="fa-icon fa fa-check icon-checkmark"></span>10 playable levels.</p>
+                                    <p><span class="fa-icon fa fa-check icon-checkmark"></span>Visual instruction sequence.</p>
+                                    <p><span class="fa-icon fa fa-check icon-checkmark"></span>Repeat blocks.</p>
+                                    <p><span class="fa-icon fa fa-check icon-checkmark"></span>Desktop and mobile support.</p>
+                                    <p><span class="fa-icon fa fa-check icon-checkmark"></span>Original Background music.</p>
+                                </div>
+                                <div class="content-block">
+                                    <div style="width: 200px; height: 320px; background: var(--color-grass-green); border-radius: 1rem;">
+                                        <img src="../../assets/projects/tangleTrek/cover_portrait.png" alt="Gameplay Image" style="height: 100%; border-radius: 1rem; border: 0px solid var(--color-text-dark);">
+                                    </div>
+                                    <div class="pixel-border pixel-corners-3-step pixel-border-fit" style="margin-top: 1rem;">
+                                        <a href="https://tangletrek.savinuvijay.com" class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-yellow pixel-box-yellow-button" style="display: block; color: var(--color-text-dark); text-decoration: none;">
+                                            <div style="display: flex; align-items: center; gap: 1rem; justify-content: center;">
+                                                <span class="fa-icon fa fa-play"></span><span>PLAY THE GAME</span><span class="fa-icon fa fa-arrow-right"></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MODELS-->
+    <div id="idea-modal" class="modal modal-anim">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div style="display: flex; justify-content: space-between;">
+                <div class="pixel-border pixel-corners-3-step pixel-border-fit">
+                    <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-yellow">
+                        01 / THE IDEA
+                    </div>
+                </div>
+                <span class="modal-close" style="cursor: pointer;">&times;</span>
+            </div>
+            <h3>Making programming tangible through play.</h3>
+            <div class="modal-content-container">
+                <p>
+                    Programming is fundamentally about breaking problems into smaller steps, arranging instructions in the right sequence, and understanding how those instructions work together.
+                </p>
+                <p>
+                    I wanted to explore a way of introducing these concepts to common people without making the experience feel like a traditional programming lesson.
+                </p>
+                <p>
+                    That idea became TangleTrek — a puzzle adventure where players guide a character through a grid-based world by constructing sequences of visual instructions.
+                </p>
+                <p>
+                    Instead of writing code, players experiment with actions, arrange them into sequences, and watch their instructions come to life.
+                </p>
+                <p>
+                    The goal was simple: make the fundamentals of programming logic approachable, visual and enjoyable through play.
+                </p>
+                <p>
+                    <strong>Audience:</strong> Beginners and puzzle enthusiasts.
+                </p>
+                <p>
+                    <strong>Goal:</strong> Make programming logic approachable through interactive gameplay.
+                </p>
+                <p>
+                    <strong>Challenge:</strong> Translate abstract programming concepts into intuitive game interactions.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="gameplay-modal" class="modal modal-anim">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div style="display: flex; justify-content: space-between;">
+            <div class="pixel-border pixel-corners-3-step pixel-border-fit">
+                <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-yellow">
+                    02 / THE GAMEPLAY
+                </div>
+            </div>
+            <span class="modal-close" style="cursor: pointer;">&times;</span>
+        </div>
+        <h3>Explore. Program. Execute.</h3>
+        <div class="modal-content-container">
+            <p>
+                TangleTrek revolves around a simple gameplay loop: understand the environment, construct a sequence of instructions, and execute it to guide the character towards the goal.
+            </p>
+            <ol class="gameplay-steps">
+                <li class="gameplay-step">
+                    <h4>01 Explore</h4>
+                    <p>Understand the game board, identify the goal, and plan a possible route through the grid.</p>
+                </li>
+                <li class="gameplay-step">
+                    <h4>02 Program</h4>
+                    <p>Choose actions from the action library and arrange them in the sequence builder. Combine instructions and use repeat blocks to create more structured sequences.</p>
+                </li>
+                <li class="gameplay-step">
+                    <h4>03 Execute</h4>
+                    <p>Run the sequence and watch the character follow the instructions through movement and animation. Observe the result and experiment with a different sequence when needed.</p>
+                </li>
+            </ol>
+        </div>
+    </div>
+    </div>
+    <div id="journey-modal" class="modal modal-anim">
+        <div class="modal-content">
+            <div style="display: flex; justify-content: space-between;">
+                <div class="pixel-border pixel-corners-3-step pixel-border-fit">
+                    <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-yellow">
+                        03 / FROM CHARACTER TO GAME
+                    </div>
+                </div>
+                <span class="modal-close" style="cursor: pointer;">&times;</span>
+            </div>
+            <h3>An experiment-driven journey.</h3>
+            <div class="modal-content-container">
+                <p>TangleTrek didn't begin with a finished game design or a predefined interface. Almost every part of the experience started as an experiment. It then evolved through a series of such experiments, growing from a simple character into a complete playable game.</p>
+                <p>I took a bottom-up approach, starting with a single character and gradually building the systems around it.</p>
+                <ol class="gameplay-steps">
+                    <li class="gameplay-step">
+                        <h4>01. THE CHARACTER</h4>
+                        <p>Started with a simple character and explored its visual identity.</p>
+                    </li>
+                    <li class="gameplay-step">
+                        <h4>02. MOVEMENT & ANIMATION</h4>
+                        <p>Experimented with the character's movements and animations, gradually bringing it to life.</p>
+                    </li>
+                    <li class="gameplay-step">
+                        <h4>03. THE ACTIONS</h4>
+                        <p>Defined the core instructions players could use to control the character, starting with actions such as moving forward and turning.</p>
+                    </li>
+                    <li class="gameplay-step">
+                        <h4>04. ACTION LIBRARY</h4>
+                        <p>Organised the available actions into a library, making them accessible to players as reusable visual instructions.</p>
+                    </li>
+                    <li class="gameplay-step">
+                        <h4>05. SEQUENCE BUILDER</h4>
+                        <p>Built a workspace where players could arrange actions through drag-and-drop interactions. Repeat blocks added another layer to the instruction-building experience.</p>
+                    </li>
+                    <li class="gameplay-step">
+                        <h4>06. THE COMPLETE GAME</h4>
+                        <p>Brought the individual experiments together, refined the visual presentation and developed the experience into a complete game with 10 playable levels.</p>
+                    </li>
+                </ol>
+                <p>Each experiment helped shape the next part of the experience. It was an iterative cycle of building, testing and refining.</p>
+            </div>
+        </div>
+    </div>
+    <div id="interaction-modal" class="modal modal-anim">
+        <div class="modal-content">
+            <div style="display: flex; justify-content: space-between;">
+                <div class="pixel-border pixel-corners-3-step pixel-border-fit">
+                    <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-yellow">
+                        04 / INTERACTION DESIGN
+                    </div>
+                </div>
+                <span class="modal-close" style="cursor: pointer;">&times;</span>
+            </div>
+            <h3>Building with visual instructions.</h3>
+            <div class="modal-content-container">
+                <p>The interface makes programming logic tangible through a small set of clear, interactive building blocks.</p>
+                <p><strong>Action library:</strong> Players choose visual actions to control the character.</p>
+                <p><strong>Sequence builder:</strong> Actions are arranged in order using drag-and-drop interactions.</p>
+                <p><strong>Repeat block:</strong> A group of actions can be repeated to build longer sequences with fewer steps.</p>
+                <p>This interaction model encourages players to form a plan, run it, observe the result, and adjust their instructions.</p>
+            </div>
+        </div>
+    </div>
+    <div id="engineering-modal" class="modal modal-anim">
+        <div class="modal-content">
+            <div style="display: flex; justify-content: space-between;">
+                <div class="pixel-border pixel-corners-3-step pixel-border-fit">
+                    <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-yellow">
+                        05 / ENGINEERING
+                    </div>
+                </div>
+                <span class="modal-close" style="cursor: pointer;">&times;</span>
+            </div>
+            <h3>Turning interactions into a playable experience.</h3>
+            <div class="modal-content-container">
+                <p>TangleTrek brings together a reactive interface and a 2D game-rendering engine.</p>
+                <p><strong>Svelte</strong> handles the component-based interface and player interactions.</p>
+                <p><strong>PixiJS</strong> renders the game board, tiles, character movement, and animation.</p>
+                <p>The project brought together several areas of frontend development:</p>
+                <ul>
+                    <li>Component-based interface development</li>
+                    <li>Interactive game-board rendering</li>
+                    <li>Character movement and animation</li>
+                    <li>Visual instruction and sequence-building interactions</li>
+                    <li>Drag-and-drop functionality</li>
+                    <li>Game execution and interaction feedback</li>
+                </ul>
+                <p>I designed and developed the complete experience independently, bringing together the interface, gameplay interactions and visual presentation.</p>
+            </div>
+        </div>
+    </div>
+    <div id="mobile-modal" class="modal modal-anim">
+        <div class="modal-content">
+            <div style="display: flex; justify-content: space-between;">
+                <div class="pixel-border pixel-corners-3-step pixel-border-fit">
+                    <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-yellow">
+                        06 / MOBILE EXPERIENCE
+                    </div>
+                </div>
+                <span class="modal-close" style="cursor: pointer;">&times;</span>
+            </div>
+            <h3>Taking the game mobile.</h3>
+            <div class="modal-content-container">
+                <p>The game needed to remain usable on smaller screens without losing the core interaction experience.</p>
+                <p>Adapting the interface meant rethinking how players interact with the action library and sequence builder in a more constrained space.</p>
+                <p>I experimented with touch interactions, drag-and-drop behaviour, layout adjustments and the overall gameplay flow to make the experience work across desktop and mobile devices.</p>
+                <p>The objective was not simply to fit the desktop interface onto a smaller screen, but to preserve the essential gameplay interactions.</p>
+
+            </div>
+        </div>
+    </div>
+    <div id="sound-modal" class="modal modal-anim">
+        <div class="modal-content">
+            <div style="display: flex; justify-content: space-between;">
+                <div class="pixel-border pixel-corners-3-step pixel-border-fit">
+                    <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-yellow">
+                        07 / SOUND & ATMOSPHERE
+                    </div>
+                </div>
+                <span class="modal-close" style="cursor: pointer;">&times;</span>
+            </div>
+            <h3>A little music for the adventure.</h3>
+            <div class="modal-content-container">
+                <p>The visual experience was only one part of bringing TangleTrek to life.</p>
+                <p>I also composed an original, looping background soundtrack for the game. The short track adds an additional layer of atmosphere to the puzzle-solving experience.</p>
+                <p>This soundtrack adds atmosphere to the puzzle-solving experience.</p>
+            </div>
+        </div>
+    </div>
+    <div id="ack-modal" class="modal modal-anim">
+        <div class="modal-content">
+            <div style="display: flex; justify-content: space-between;">
+                <div class="pixel-border pixel-corners-3-step pixel-border-fit">
+                    <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-yellow">
+                        08 / ACKNOWLEDGEMENTS & CREDITS
+                    </div>
+                </div>
+                <span class="modal-close" style="cursor: pointer;">&times;</span>
+            </div>
+            <h3>Assets & Tools</h3>
+            <div class="modal-content-container">
+                <p>TangleTrek was made possible with the help of these tools and resources:</p>
+                <h5>Graphics</h5>
+                <p>The game grid graphics was created using the the <a href="https://kenney.nl/assets/tiny-town">Tiny Town</a> asset pack from <a href="https://kenney.nl">kenney.nl</a></p>
+                <h5>Pixel art editing</h5>
+                <p>the character pixelart editing and styling was done in <a href="https://www.piskelapp.com/">Piskel Editor</a></p>
+                <h5>Sound and music</h5>
+                <p>The original game theme was created using <a href="https://www.beepbox.co/">BeepBox</a>.</p>
+                <p>The other game sounds were from <a href="https://freesound.org/">Freesound.org</a>.</p>
+                <h5>Game engine and UI</h5>
+                <p>The gameplay grid and mechanics was developed using <a href="https://pixijs.com/">PixiJS</a> Engine.</p>
+                <p>The Tangle Trek web app was written in <a href="https://svelte.dev/">Svelte</a></p>
+                <hr>
+                <p>Thank you to the creators and communities behind these resources.</p>
+            </div>
+        </div>
+    </div>
+    <div id="complete-modal" class="modal modal-anim">
+        <div class="modal-content">
+            <div style="display: flex; justify-content: space-between;">
+                <div class="pixel-border pixel-corners-3-step pixel-border-fit">
+                    <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-yellow">
+                        08 / LEVEL COMPLETE!
+                    </div>
+                </div>
+                <span class="modal-close" style="cursor: pointer;">&times;</span>
+            </div>
+            <h3>From experiment to complete game.</h3>
+            <div class="modal-content-container">
+                <p class="completion-intro">What began as an experiment with a single character gradually evolved into a fully playable puzzle adventure.</p>
+                <p>TangleTrek became an opportunity to explore the complete product-building process—from the initial idea and interaction design to implementation, refinement, and deployment.</p>
+                <p class="completion-outcome-heading"><strong>The outcome:</strong></p>
+                <ul class="completion-outcomes">
+                    <li><span class="fa-icon fa fa-check icon-checkmark" aria-hidden="true"></span>10 playable levels</li>
+                    <li><span class="fa-icon fa fa-check icon-checkmark" aria-hidden="true"></span>A grid-based puzzle experience</li>
+                    <li><span class="fa-icon fa fa-check icon-checkmark" aria-hidden="true"></span>Visual instruction sequences</li>
+                    <li><span class="fa-icon fa fa-check icon-checkmark" aria-hidden="true"></span>A reusable action library</li>
+                    <li><span class="fa-icon fa fa-check icon-checkmark" aria-hidden="true"></span>Repeat blocks</li>
+                    <li><span class="fa-icon fa fa-check icon-checkmark" aria-hidden="true"></span>Character movement and animation</li>
+                    <li><span class="fa-icon fa fa-check icon-checkmark" aria-hidden="true"></span>Desktop and mobile support</li>
+                    <li><span class="fa-icon fa fa-check icon-checkmark" aria-hidden="true"></span>An original background soundtrack</li>
+                    <li><span class="fa-icon fa fa-check icon-checkmark" aria-hidden="true"></span>A live browser-based game</li>
+                </ul>
+                <p>Most importantly, the project gave me an opportunity to explore how abstract programming ideas could be translated into tangible, interactive experiences.</p>
+                <p class="completion-closing"><strong>Ready for another adventure?</strong></p>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
