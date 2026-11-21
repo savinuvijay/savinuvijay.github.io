@@ -34,7 +34,6 @@
         </div>
     </header>
     <div class="hero-container" style="position: relative;">
-        <img src="../../assets/projects/tangleTrek/kunju_sprite_13.png" alt="Gameplay Image" style="position:absolute; bottom:1rem; left:25rem; height: 8vw;">
         <div class="hero-content">
             <div class="pixel-border pixel-corners-3-step pixel-border-fit pixel-box-no-border">
                 <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-yellow">
@@ -47,25 +46,28 @@
             <div class="hero-elements">
                 <div class="pixel-border pixel-corners-3-step pixel-border-fit pixel-box-no-border">
                     <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-blue">
-                        <div style="display: flex; align-items: center; gap: 1rem; justify-content: center;">
+                        <div class="hero-element">
                             <span class="fa-icon fa fa-gamepad"></span><span>Independent Project</span>
                         </div>
                     </div>
                 </div>
                 <div class="pixel-border pixel-corners-3-step pixel-border-fit pixel-box-no-border">
                     <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-blue">
-                        <div style="display: flex; align-items: center; gap: 1rem; justify-content: center;">
+                        <div class="hero-element">
                             <span class="fa-icon fa fa-forward"></span><span>10 Levels</span>
                         </div>
                     </div>
                 </div>
                 <div class="pixel-border pixel-corners-3-step pixel-border-fit pixel-box-no-border">
                     <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-blue">
-                        <div style="display: flex; align-items: center; gap: 1rem; justify-content: center;">
+                        <div class="hero-element">
                             <span class="fa-icon fa fa-code"></span><span>Svelte + PixiJS</span>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="hero-image hero-image-horizontal">
+                <img src="../../assets/projects/tangleTrek/game-cap-video-4.gif" alt="Gameplay Image" style="height: 100%; border-radius: 1rem; border: 5px solid var(--color-grass-green);">
             </div>
             <div class="hero-buttons">
                 <div class="pixel-border pixel-corners-3-step pixel-border-fit">
@@ -84,25 +86,26 @@
                 </div>
             </div>
         </div>
-        <div class="hero-image">
+        <div class="hero-image hero-image-vertical">
             <img src="../../assets/projects/tangleTrek/game-cap-video-1.gif" alt="Gameplay Image" style="height: 100%; border-radius: 1rem; border: 5px solid var(--color-grass-green);">
         </div>
+        <img src="../../assets/projects/tangleTrek/kunju_sprite_13.png" alt="Gameplay Image" class="hero-character-image">
     </div>
     <hr class="fade-divider">
     <div style="width: 100vw; display: flex; justify-content: center;">
-        <div style="width: 90rem;">
+        <div class="sections-container">
             <!-- 01 / THE IDEA -->
             <div class="section-container" id="idea-section">
                 <div class="pixel-border pixel-corners-5-step">
                     <div class="pixel-box pixel-corners-5-step pixel-box-blue">
                         <div class="section-content">
                             <div class="section-content-row">
-                                <div class="content-block" style="display: flex; flex-grow: 1; align-items: center; justify-content: center;">
+                                <div class="content-block idea-image">
                                     <div style="height: 100%; width: 250px; border-radius: 10px;">
                                         <img src="../../assets/projects/tangleTrek/trophy.png" alt="Gameplay Image" style="width: 100%; border-radius: 2rem;">
                                     </div>
                                 </div>
-                                <div class="content-block" style="max-width: 30vw;">
+                                <div class="content-block idea-content">
                                     <div class="pixel-border pixel-corners-3-step pixel-border-fit" id="idea-btn" style="cursor: pointer;">
                                         <div class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-yellow">
                                             01 / THE IDEA
@@ -113,9 +116,10 @@
                                         A puzzle game that turns programming logic into a playful, visual experience. Players explore a world of challenges, using visual instructions to navigate and solve problems, making the abstract concepts of coding accessible and engaging.
                                     </p>
                                 </div>
-                                <div style="flex: 1 1 auto; padding: 1rem 0; display: flex; align-items: center; justify-content: center;">
+                                <div class="idea-divider-vertical">
                                     <div class="vertical-divider"></div>
                                 </div>
+                                <hr class="fade-divider idea-divider-horizontal">
                                 <div class="content-block">
                                     <div style="display: flex; align-items: center; gap: 2rem;">
                                         <span class="fa-icon fa fa-users" style="font-size: 2rem; color: var(--color-icon-green); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
@@ -169,7 +173,8 @@
                                     </div>
                                 </div>
                                 <div style="display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--color-text-dark);">
-                                    <span class="fa-icon fa fa-arrow-right" style="transform: scale(1.5); color: var(--color-trophy-yellow); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
+                                    <span class="fa-icon fa fa-arrow-right gameplay-arrow gameplay-arrow-right"></span>
+                                    <span class="fa-icon fa fa-arrow-down gameplay-arrow gameplay-arrow-down"></span>
                                 </div>
                                 <div class="content-block">
                                     <div class="pixel-border pixel-corners-5-step">
@@ -183,7 +188,8 @@
                                     </div>
                                 </div>
                                 <div style="display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--color-text-dark);">
-                                    <span class="fa-icon fa fa-arrow-right" style="transform: scale(1.5); color: var(--color-trophy-yellow); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
+                                    <span class="fa-icon fa fa-arrow-right gameplay-arrow gameplay-arrow-right"></span>
+                                    <span class="fa-icon fa fa-arrow-down gameplay-arrow gameplay-arrow-down"></span>
                                 </div>
                                 <div class="content-block">
                                     <div class="pixel-border pixel-corners-5-step">
@@ -200,10 +206,10 @@
                         </div>
                     </div>
                 </div>
-                <img src="../../assets/projects/tangleTrek/tree-large.png" alt="Gameplay Image" style="position:absolute; bottom:1rem; left:-1.5rem; width: 100px;">
-                <img src="../../assets/projects/tangleTrek/bush-1.png" alt="Gameplay Image" style="position:absolute; bottom:0.8rem; left:-0.5rem; width: 70px;">
-                <img src="../../assets/projects/tangleTrek/tree-small.png" alt="Gameplay Image" style="position:absolute; bottom:1rem; right:-1.5rem; width: 100px;">
-                <img src="../../assets/projects/tangleTrek/bush-3.png" alt="Gameplay Image" style="position:absolute; bottom:0.8rem; right:-0.5rem; width: 70px;">
+                <img src="../../assets/projects/tangleTrek/tree-large.png" alt="Gameplay Image" class="footer-element-tree-1">
+                <img src="../../assets/projects/tangleTrek/bush-1.png" alt="Gameplay Image" class="footer-element-bush-1">
+                <img src="../../assets/projects/tangleTrek/tree-small.png" alt="Gameplay Image" class="footer-element-tree-2">
+                <img src="../../assets/projects/tangleTrek/bush-3.png" alt="Gameplay Image" class="footer-element-bush-2">
             </div>
             <hr class="fade-divider">
             <!-- 03 / FROM CHARACTER TO GAME -->
@@ -228,8 +234,11 @@
                                     <h6>01 The Character</h6>
                                     <p>Started with a simple character and visual style.</p>
                                 </div>
-                                <div style="display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                                <div class="journey-arrow-right">
                                     <span class="fa-icon fa fa-arrow-right" style="color: var(--color-trophy-yellow); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
+                                </div>
+                                <div class="journey-arrow-down">
+                                    <span class="fa-icon fa fa-arrow-down" style="color: var(--color-trophy-yellow); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
                                 </div>
                                 <div class="content-block">
                                     <div style="height: 100px; width: 10vw; border-radius: 1rem; display: flex; align-items: center;">
@@ -240,8 +249,11 @@
                                     <h6>02 Movement & Animation</h6>
                                     <p>Exparimented with movement and animations.</p>
                                 </div>
-                                <div style="display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                                <div class="journey-arrow-right">
                                     <span class="fa-icon fa fa-arrow-right" style="color: var(--color-trophy-yellow); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
+                                </div>
+                                <div class="journey-arrow-down">
+                                    <span class="fa-icon fa fa-arrow-down" style="color: var(--color-trophy-yellow); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
                                 </div>
                                 <div class="content-block">
                                     <div style="height: 100px; width: 170px; border-radius: 1rem; display: flex; align-items: center;">
@@ -250,8 +262,11 @@
                                     <h6>03 The Actions</h6>
                                     <p>Defined core instructions like move and turn.</p>
                                 </div>
-                                <div style="display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                                <div class="journey-arrow-right">
                                     <span class="fa-icon fa fa-arrow-right" style="color: var(--color-trophy-yellow); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
+                                </div>
+                                <div class="journey-arrow-down">
+                                    <span class="fa-icon fa fa-arrow-down" style="color: var(--color-trophy-yellow); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
                                 </div>
                                 <div class="content-block">
                                     <div style="height: 100px; width: 170px; border-radius: 1rem; display: flex; align-items: center;">
@@ -260,8 +275,11 @@
                                     <h6>04 Action Library</h6>
                                     <p>Organized actions into reusable library.</p>
                                 </div>
-                                <div style="display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                                <div class="journey-arrow-right">
                                     <span class="fa-icon fa fa-arrow-right" style="color: var(--color-trophy-yellow); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
+                                </div>
+                                <div class="journey-arrow-down">
+                                    <span class="fa-icon fa fa-arrow-down" style="color: var(--color-trophy-yellow); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
                                 </div>
                                 <div class="content-block">
                                     <div style="height: 100px; width: 170px; border-radius: 1rem; display: flex; align-items: center;">
@@ -270,8 +288,11 @@
                                     <h6>05 Sequence Builder</h6>
                                     <p>Built a drag and drop sequence builder to build the action sequence.</p>
                                 </div>
-                                <div style="display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                                <div class="journey-arrow-right">
                                     <span class="fa-icon fa fa-arrow-right" style="color: var(--color-trophy-yellow); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
+                                </div>
+                                <div class="journey-arrow-down">
+                                    <span class="fa-icon fa fa-arrow-down" style="color: var(--color-trophy-yellow); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
                                 </div>
                                 <div class="content-block">
                                     <div style="height: 100px; width: 170px; border-radius: 1rem; display: flex; align-items: center;">
@@ -333,7 +354,7 @@
                                     </div>
                                 </div>
                                 <div class="content-block">
-                                    <div style="width: 450px; height: 450px; background: var(--color-light-blue); border-radius: 1rem;">
+                                    <div class="interaction-gif-container">
                                         <img src="../../assets/projects/tangleTrek/game-cap-video-2.gif" alt="Gameplay Image" style="width: 100%; border-radius: 1rem; border: 3px solid var(--color-text-dark);">
                                     </div>
                                 </div>
@@ -341,10 +362,10 @@
                         </div>
                     </div>
                 </div>
-                <img src="../../assets/projects/tangleTrek/tree-large.png" alt="Gameplay Image" style="position:absolute; bottom:1rem; left:-1.5rem; width: 100px;">
-                <img src="../../assets/projects/tangleTrek/bush-1.png" alt="Gameplay Image" style="position:absolute; bottom:0.8rem; left:-0.5rem; width: 70px;">
-                <img src="../../assets/projects/tangleTrek/tree-small.png" alt="Gameplay Image" style="position:absolute; bottom:1rem; right:-1.5rem; width: 100px;">
-                <img src="../../assets/projects/tangleTrek/bush-3.png" alt="Gameplay Image" style="position:absolute; bottom:0.8rem; right:-0.5rem; width: 70px;">
+                <img src="../../assets/projects/tangleTrek/tree-large.png" alt="Gameplay Image" class="footer-element-tree-1">
+                <img src="../../assets/projects/tangleTrek/bush-1.png" alt="Gameplay Image" class="footer-element-bush-1">
+                <img src="../../assets/projects/tangleTrek/tree-small.png" alt="Gameplay Image" class="footer-element-tree-2">
+                <img src="../../assets/projects/tangleTrek/bush-3.png" alt="Gameplay Image" class="footer-element-bush-2">
             </div>
             <hr class="fade-divider">
             <!-- 05 / ENGINEERING -->
@@ -359,9 +380,9 @@
                             </div>
                             <h2>Turning interactions into a playable experience.</h2>
                             <p>A web game built with Svelte and PixiJS, combining a reactive UI with a fast, 2D game rendering engine.</p>
-                            <div class="section-content-row" style="justify-content: space-around;">
+                            <div class="section-content-row engineering-section-content-row-1" style="justify-content: space-around;">
                                 <div class="pixel-border pixel-corners-5-step">
-                                    <div class="pixel-box pixel-corners-5-step pixel-box-blue" style="text-align: center; width: 18vw; padding: 0.5rem;">
+                                    <div class="pixel-box pixel-corners-5-step pixel-box-blue engineering-pixel-box">
                                         <div style="width: 80px; height: 80px; margin: 1rem auto; border-radius: 1rem;">
                                             <img src="../../assets/projects/tangleTrek/svelte-logo.png" alt="Gameplay Image" style="height: 100%;">
                                         </div>
@@ -373,7 +394,7 @@
                                     <span class="fa-icon fa fa-arrow-right" style="color: var(--color-trophy-yellow); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
                                 </div>
                                 <div class="pixel-border pixel-corners-5-step">
-                                    <div class="pixel-box pixel-corners-5-step pixel-box-blue" style="text-align: center; width: 18vw; padding: 0.5rem;">
+                                    <div class="pixel-box pixel-corners-5-step pixel-box-blue engineering-pixel-box">
                                         <div style="width: 80px; height: 80px; margin: 1rem auto; border-radius: 1rem;">
                                             <img src="../../assets/projects/tangleTrek/game-controller.png" alt="Gameplay Image" style="height: 100%;">
                                         </div>
@@ -385,7 +406,7 @@
                                     <span class="fa-icon fa fa-arrow-right" style="color: var(--color-trophy-yellow); -webkit-text-stroke: 1px var(--color-text-dark);"></span>
                                 </div>
                                 <div class="pixel-border pixel-corners-5-step">
-                                    <div class="pixel-box pixel-corners-5-step pixel-box-blue" style="text-align: center; width: 18vw; padding: 0.5rem;">
+                                    <div class="pixel-box pixel-corners-5-step pixel-box-blue engineering-pixel-box">
                                         <div style="width: 80px; height: 80px; margin: 1rem auto; border-radius: 1rem;">
                                             <img src="../../assets/projects/tangleTrek/pixijs.png" alt="Gameplay Image" style="width: 100%;">
                                         </div>
@@ -394,7 +415,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="section-content-row" style="justify-content: space-around; margin-top: 1rem;">
+                            <div class="section-content-row engineering-section-content-row-2" style="justify-content: space-around; margin-top: 1rem;">
                                 <div class="content-block">
                                     <p><span class="fa-icon fa fa-check icon-checkmark"></span>Component-based UI</p>
                                     <p><span class="fa-icon fa fa-check icon-checkmark"></span>Game board & tile rendering</p>
@@ -418,8 +439,8 @@
                         <div class="section-content">
                             <div class="section-content-row" style="justify-content: left;">
                                 <div class="content-block">
-                                    <div style="width: 360px; height: 650px; background: var(--color-dark-blue); border-radius: 1rem;">
-                                        <img src="../../assets/projects/tangleTrek/game-cap-video-3.gif" alt="Gameplay Image" style="height: 100%; border-radius: 1rem; border: 3px solid var(--color-text-dark);">
+                                    <div class="mobile-experience-gif-container">
+                                        <img src="../../assets/projects/tangleTrek/game-cap-video-3.gif" alt="Gameplay Image" style="width: 100%; border-radius: 1rem; border: 3px solid var(--color-text-dark);">
                                     </div>
                                 </div>
                                 <div class="content-block">
@@ -438,10 +459,10 @@
                         </div>
                     </div>
                 </div>
-                 <img src="../../assets/projects/tangleTrek/tree-large.png" alt="Gameplay Image" style="position:absolute; bottom:1rem; left:-1.5rem; width: 100px;">
-                <img src="../../assets/projects/tangleTrek/bush-1.png" alt="Gameplay Image" style="position:absolute; bottom:0.8rem; left:-0.5rem; width: 70px;">
-                <img src="../../assets/projects/tangleTrek/tree-small.png" alt="Gameplay Image" style="position:absolute; bottom:1rem; right:-1.5rem; width: 100px;">
-                <img src="../../assets/projects/tangleTrek/bush-3.png" alt="Gameplay Image" style="position:absolute; bottom:0.8rem; right:-0.5rem; width: 70px;">
+                 <img src="../../assets/projects/tangleTrek/tree-large.png" alt="Gameplay Image" class="footer-element-tree-1">
+                <img src="../../assets/projects/tangleTrek/bush-1.png" alt="Gameplay Image" class="footer-element-bush-1">
+                <img src="../../assets/projects/tangleTrek/tree-small.png" alt="Gameplay Image" class="footer-element-tree-2">
+                <img src="../../assets/projects/tangleTrek/bush-3.png" alt="Gameplay Image" class="footer-element-bush-2">
             </div>
             <hr class="fade-divider">
             <!-- 07 / SOUND & ATMOSPHERE -->
@@ -461,8 +482,8 @@
                             <div style="display: flex; justify-content: center;">
                                 <div class="pixel-border pixel-corners-5-step">
                                     <div class="pixel-box pixel-corners-5-step pixel-box-dark-blue" style="text-align: center; padding: 0.5rem;">
-                                        <div style="width: 370px; height: 100px; color:#000; border-radius: 1rem; display: flex; justify-content: space-between; align-items: center; padding: 0 1rem;">
-                                            <button class="icon-box pixel-box-green pixel-box-green-button" style="height: 70px; width: 70px; font-size: 1.5rem; border-radius: 50%; border: 2px solid #000;" id="play-btn" aria-label="Play">
+                                        <div class="music-player-container">
+                                            <button class="icon-box pixel-box-green pixel-box-green-button music-player-button" id="play-btn" aria-label="Play">
                                                 <span class="fa-icon fa fa-play"></span>
                                             </button>
                                             <div style="flex: 1 1 auto;"></div>
@@ -491,7 +512,7 @@
                                         </div>
                                     </div>
                                     <h2>Assets & Tools</h2>
-                                    <table class="credits-table" style="margin-left: 2rem;">
+                                    <table class="credits-table">
                                         <thead>
                                             <tr>
                                                 <th scope="col">Category</th>
@@ -522,10 +543,10 @@
                         </div>
                     </div>
                 </div>
-                <img src="../../assets/projects/tangleTrek/tree-large.png" alt="Gameplay Image" style="position:absolute; bottom:1rem; left:-1.5rem; width: 100px;">
-                <img src="../../assets/projects/tangleTrek/bush-1.png" alt="Gameplay Image" style="position:absolute; bottom:0.8rem; left:-0.5rem; width: 70px;">
-                <img src="../../assets/projects/tangleTrek/tree-small.png" alt="Gameplay Image" style="position:absolute; bottom:1rem; right:-1.5rem; width: 100px;">
-                <img src="../../assets/projects/tangleTrek/bush-3.png" alt="Gameplay Image" style="position:absolute; bottom:0.8rem; right:-0.5rem; width: 70px;">
+                <img src="../../assets/projects/tangleTrek/tree-large.png" alt="Gameplay Image" class="footer-element-tree-1">
+                <img src="../../assets/projects/tangleTrek/bush-1.png" alt="Gameplay Image" class="footer-element-bush-1">
+                <img src="../../assets/projects/tangleTrek/tree-small.png" alt="Gameplay Image" class="footer-element-tree-2">
+                <img src="../../assets/projects/tangleTrek/bush-3.png" alt="Gameplay Image" class="footer-element-bush-2">
             </div>
             <hr class="fade-divider">
             <!-- 09 / LEVEL COMPLETE! -->
@@ -548,10 +569,10 @@
                                     <p><span class="fa-icon fa fa-check icon-checkmark"></span>Original Background music.</p>
                                 </div>
                                 <div class="content-block">
-                                    <div style="width: 200px; height: 320px; background: var(--color-grass-green); border-radius: 1rem;">
-                                        <img src="../../assets/projects/tangleTrek/cover_portrait.png" alt="Gameplay Image" style="height: 100%; border-radius: 1rem; border: 0px solid var(--color-text-dark);">
+                                    <div class="completion-poster">
+                                        <img src="../../assets/projects/tangleTrek/cover_portrait.png" alt="Gameplay Image" style="width: 100%; border-radius: 1rem; border: 0px solid var(--color-text-dark);">
                                     </div>
-                                    <div class="pixel-border pixel-corners-3-step pixel-border-fit" style="margin-top: 1rem;">
+                                    <div class="pixel-border pixel-corners-3-step pixel-border-fit completion-play-btn-container">
                                         <a href="https://tangletrek.savinuvijay.com" class="pixel-box pixel-corners-3-step pixel-box-label pixel-box-yellow pixel-box-yellow-button" style="display: block; color: var(--color-text-dark); text-decoration: none;">
                                             <div style="display: flex; align-items: center; gap: 1rem; justify-content: center;">
                                                 <span class="fa-icon fa fa-play"></span><span>PLAY THE GAME</span><span class="fa-icon fa fa-arrow-right"></span>

@@ -210,8 +210,6 @@ header {
 }
 
 .hero-image {
-    flex: 0 1 40vw;
-    height: min(75vh, 500px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,6 +219,16 @@ header {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+}
+
+.hero-image-vertical {
+    flex: 0 1 40vw;
+    height: min(75vh, 500px);
+    display: flex;
+}
+
+.hero-image-horizontal {
+    display: none;
 }
 
 .hero-title {
@@ -245,6 +253,24 @@ header {
     margin-bottom: 1rem;
 }
 
+.hero-element {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.hero-character-image {
+    position:absolute;
+    bottom:1rem;
+    left:25rem;
+    height: 8vw;
+}
+
+.sections-container {
+    width: 90rem;
+}
+
 .section-container {
     padding: 0.8rem;
     color: var(--color-text-dark);
@@ -255,44 +281,6 @@ header {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
-}
-
-.credits-table {
-    width: 100%;
-    border-collapse: collapse;
-    color: var(--color-text-light);
-    text-align: left;
-}
-
-.credits-table th,
-.credits-table td {
-    padding: 0.75rem 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.credits-table thead th {
-    color: var(--color-trophy-yellow);
-    font-family: var(--font-game);
-    font-size: 0.75rem;
-}
-
-.credits-table tbody th {
-    font-weight: 700;
-}
-
-.credits-table a {
-    color: var(--color-trophy-yellow);
-    text-decoration: underline;
-    text-underline-offset: 0.2em;
-}
-
-.credits-table a:hover,
-.credits-table a:focus-visible {
-    color: var(--color-trophy-yellow-light);
-}
-
-.credits-table tbody tr:nth-child(even) {
-    background: rgba(255, 255, 255, 0.06);
 }
 
 .pixel-border {
@@ -540,6 +528,57 @@ header {
     overflow: auto;
 }
 
+.footer-element-tree-1 {
+    position:absolute;
+    bottom:1rem;
+    left:-1.5rem;
+    width: 100px;
+}
+.footer-element-tree-2 {
+    position:absolute;
+    bottom:1rem;
+    right:-1.5rem;
+    width: 100px;
+}
+.footer-element-bush-1 {
+    position:absolute;
+    bottom:0.8rem;
+    left:-0.5rem;
+    width: 70px;
+}
+.footer-element-bush-2 {
+    position:absolute;
+    bottom:0.8rem;
+    right:-0.5rem;
+    width: 70px;
+}
+
+
+/* Sections */
+
+.idea-image {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.idea-content {
+    max-width: 30vw;
+}
+
+.idea-divider-vertical {
+    display: block;
+    flex: 1 1 auto;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.idea-divider-horizontal {
+    display: none;
+}
+
 .gameplay-intro {
     margin: 0 0 1.5rem;
     font-size: 1.1rem;
@@ -550,6 +589,119 @@ header {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.gameplay-arrow {
+    transform: scale(1.5);
+    color: var(--color-trophy-yellow);
+    -webkit-text-stroke: 1px var(--color-text-dark);
+}
+
+.gameplay-arrow-right {
+    display: block;
+}
+
+.gameplay-arrow-down {
+    display: none;
+}
+
+.journey-arrow-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.journey-arrow-down {
+    display: none;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.interaction-gif-container {
+    width: 450px;
+    background: var(--color-dark-blue);
+}
+
+.engineering-pixel-box {
+    text-align: center;
+    width: 18vw;
+    padding: 0.5rem;
+}
+
+.mobile-experience-gif-container {
+    width: 360px;
+    height: 650px;
+    background: var(--color-dark-blue);
+    border-radius: 1rem;
+}
+
+.music-player-container {
+    width: 370px;
+    height: 100px;
+    color: var(--color-text-dark);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.music-player-button {
+    height: 70px;
+    width: 70px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    border: 2px solid var(--color-text-dark);;
+}
+
+.credits-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--color-text-light);
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.credits-table th,
+.credits-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.credits-table thead th {
+    color: var(--color-trophy-yellow);
+    font-family: var(--font-game);
+    font-size: 0.75rem;
+}
+
+.credits-table tbody th {
+    font-weight: 700;
+}
+
+.credits-table a {
+    color: var(--color-trophy-yellow);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.credits-table a:hover,
+.credits-table a:focus-visible {
+    color: var(--color-trophy-yellow-light);
+}
+
+.credits-table tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.completion-poster {
+    width: 200px;
+    height: 320px;
+    border-radius: 1rem;
+}
+
+.completion-play-btn-container {
+    margin-top: 1rem;
 }
 
 .completion-intro {
@@ -604,4 +756,179 @@ header {
 
 .modal-content .model-item {
     height: 180px;
+}
+
+@media (max-width: 1250px) {
+
+    .header-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+        color: var(--color-trophy-yellow);
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-content {
+        width: 100%;
+        margin-top: 70px;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hero-elements {
+        margin-bottom: 1rem;
+        justify-content: center;
+    }
+
+    .hero-element {
+        font-size: 0.6rem;
+    }
+
+    .hero-image-vertical {
+        display: none;
+    }
+
+    .hero-image-horizontal {
+        display: flex;
+    }
+
+    .hero-buttons {
+        margin-top: 2rem;
+        justify-content: center;
+    }
+
+    .hero-character-image {
+        bottom:5rem;
+        left: 45%;
+        height: 10vh;
+    }
+
+    .sections-container {
+        width: 90vw;
+    }
+    .section-content-row {
+        flex-direction: column;
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+
+    .footer-element-tree-1 {
+        position:absolute;
+        bottom:1rem;
+        left:-1.5rem;
+        width: 15vw;
+    }
+    .footer-element-tree-2 {
+        position:absolute;
+        bottom:1rem;
+        right:-1.5rem;
+        width: 15vw;
+    }
+    .footer-element-bush-1 {
+        position:absolute;
+        bottom:0.8rem;
+        left:-0.7rem;
+        width: 10vw;
+    }
+    .footer-element-bush-2 {
+        position:absolute;
+        bottom:0.8rem;
+        right:-0.7rem;
+        width: 10vw;
+    }
+
+    .idea-image {
+        justify-content: left;
+    }
+
+    .idea-content {
+        max-width: 100%;
+    }
+
+    .idea-divider-vertical {
+        display: none;
+    }
+
+    .idea-divider-horizontal {
+        display: block;
+    }
+
+    .gameplay-arrow-right {
+        display: none;
+    }
+
+    .gameplay-arrow-down {
+        display: block;
+    }
+
+    .journey-arrow-right {
+        display: none;
+    }
+
+    .journey-arrow-down {
+        display: flex;
+    }
+
+    .interaction-gif-container {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .engineering-section-content-row-1 {
+        align-items: center;
+    }
+
+    .engineering-section-content-row-2 {
+        gap: 0;
+    }
+
+    .engineering-pixel-box {
+        width: 11rem;
+    }
+
+    .mobile-experience-gif-container {
+        width: 100%;
+        height: auto;
+        background: var(--color-dark-blue);
+        border-radius: 1rem;
+    }
+
+    .music-player-container {
+        width: 90%;
+        height: 70px;
+        color:#000;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .music-player-button {
+        height: 60px;
+        width: 60px;
+    }
+
+    .credits-table {
+        margin-left: 0;
+    }
+
+    .completion-poster {
+        width: 100%;
+        height: auto;
+    }
+
+    .completion-play-btn-container {
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
 }
