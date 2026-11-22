@@ -135,10 +135,17 @@ p {
 @media (max-width: 700px) {
     .modal-content .modal-content-row {
         flex-direction: column;
+        height: auto;
+        min-height: 150px;
     }
 
     .modal-content .model-item {
-        height: 400px;
+        height: auto;
+    }
+
+    .modal-content .mobile-model-content-600,
+    .modal-content .mobile-model-content-300 {
+        height: auto;
     }
 }
 
@@ -171,12 +178,10 @@ p {
     .row-content {
         display: flex;
         flex-direction: column;
-    }
-    .modal-content .mobile-model-content-600 {
-        height: 600px;
-    }
-    .modal-content .mobile-model-content-300 {
-        height: 300px;
+        margin-left: 0;
+        height: auto;
+        width: 100%;
+        padding: 10px 20px 20px;
     }
 }
 
@@ -198,7 +203,8 @@ p {
 
 @media (max-width: 700px) {
     .thumbnail-container {
-        height: 30%;
+        height: 180px;
+        flex: 0 0 180px;
         width: 100%;
         display: flex;
         align-items: center;
@@ -206,7 +212,7 @@ p {
         background-color: #fff;
     }
     .row-content {
-        height: 100%;
+        height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -216,6 +222,14 @@ p {
 .thumbnail {
     height: 100%;
     width: 250px;
+    object-fit: cover;
+}
+
+@media (max-width: 700px) {
+    .thumbnail {
+        height: 180px;
+        width: 100%;
+    }
 }
 
 .card {
