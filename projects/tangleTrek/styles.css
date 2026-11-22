@@ -764,22 +764,40 @@ header {
         font-size: 1.5rem;
     }
 
+    .hero-container {
+        
+        min-height: 100vh;
+        box-sizing: border-box;
+        
+        background: url('../../assets/projects/tangleTrek/tangleTrekHeroBackground3.png') no-repeat left center / cover;
+    }
+
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
         color: var(--color-trophy-yellow);
     }
 
     .hero-subtitle {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .hero-description {
+        font-size: 1.1rem;
     }
 
     .hero-content {
-        width: 100%;
+        height: auto;
+        min-height: calc(100vh - 70px);
         margin-top: 70px;
+        box-sizing: border-box;
+        width: 100%;
         padding: 2rem;
+        /* height: calc(100vh - 140px);
+        margin-top: 70px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-between; */
     }
 
     .hero-elements {
@@ -788,6 +806,7 @@ header {
     }
 
     .hero-element {
+        gap: 0.5rem;
         font-size: 0.6rem;
     }
 
@@ -796,16 +815,18 @@ header {
     }
 
     .hero-image-horizontal {
+        height: 25vh;
         display: flex;
     }
 
     .hero-buttons {
         margin-top: 2rem;
         justify-content: center;
+        margin-bottom: 0;
     }
 
     .hero-character-image {
-        bottom:5rem;
+        bottom:4rem;
         left: 45%;
         height: 10vh;
     }
@@ -930,5 +951,11 @@ header {
     .completion-play-btn-container {
         margin: 0 auto;
         margin-top: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .hero-element {
+        font-size: 0.5rem;
     }
 }
