@@ -111,6 +111,16 @@ projectsBtn.onclick = function () {
     setModalClose(projectsModal);
 };
 
+projectsModal.querySelectorAll(".modal-content-row[data-project-url]").forEach(function (projectCard) {
+    projectCard.addEventListener("click", function (event) {
+        if (event.target.closest("a")) {
+            return;
+        }
+
+        window.open(projectCard.dataset.projectUrl, "_blank", "noopener,noreferrer");
+    });
+});
+
 var certificatesModal = document.getElementById("certificates-modal");
 var certificatesBtn = document.getElementById("certificates-btn");
 

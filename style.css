@@ -154,6 +154,10 @@ p {
     transform: scale(1.01);
 }
 
+.modal-content-row[data-project-url] {
+    cursor: pointer;
+}
+
 /* The Close Button */
 .modal-close {
     color: #aaaaaa;
